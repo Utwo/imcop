@@ -4,220 +4,379 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import PreFooter from "../components/PreFooter.astro";
 import { Image } from "astro:assets";
-import rectangle44 from "../assets/images/rectangle44.png";
-import rectangle35 from "../assets/images/rectangle35.png";
-import imcop1 from "../assets/images/imcop1.png";
-import line6 from "../assets/images/line6.png";
-import line7 from "../assets/images/line7.png";
+import rectangle29 from "../assets/images/rectangle29.png";
+import line6Home from "../assets/images/line6-home.png";
+import adobeStock229227468 from "../assets/images/adobe-stock-229227468.png";
+import avantaj from "../assets/images/avantaj.png";
+import rectangle32 from "../assets/images/rectangle32.png";
+import avantaj1 from "../assets/images/avantaj1.png";
+import rectangle33 from "../assets/images/rectangle33.png";
+import adobeStock192310307 from "../assets/images/adobe-stock-192310307.png";
+import adobeStock72047399 from "../assets/images/adobe-stock-72047399.png";
+import hammerIcon from "../assets/images/hammer-icon.png";
+import ecoIcon from "../assets/images/eco-icon.png";
+import thunderstormIcon from "../assets/images/thunderstorm-icon.png";
+import vectorIcon from "../assets/images/vector-icon.png";
+import badgeCheckIcon from "../assets/images/badge-check-icon.png";
+import rectangle45Home from "../assets/images/rectangle45-home.png";
+import rectangle49 from "../assets/images/rectangle49.png";
 ---
 
 <Layout>
   <div class="bg-white min-h-screen">
-    <div class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-      <Header />
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[500px] sm:min-h-[600px] lg:min-h-[650px] overflow-hidden"
+    >
+      <div class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <Header />
 
-      <section class="relative my-8 sm:my-12 lg:my-16">
-        <div class="relative z-10">
+        <div class="relative mt-8 sm:mt-12 lg:mt-16">
+          <!-- Left side - Text content -->
+          <div class="relative z-10 lg:w-1/2">
+            <div class="relative">
+              <div
+                class="hidden lg:block absolute h-[579px] -left-[200px] top-0 w-[988px] -z-10"
+              >
+                <Image
+                  src={rectangle29}
+                  alt=""
+                  class="block max-w-none size-full object-cover"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-6 sm:gap-7 lg:gap-[28px] items-start pt-8 sm:pt-12 lg:pt-[150px] pb-8 sm:pb-12"
+              >
+                <div class="h-px w-[120px] sm:w-[150px] lg:w-[180px]">
+                  <div class="absolute inset-0">
+                    <Image
+                      src={line6Home}
+                      alt=""
+                      class="block max-w-none size-full"
+                    />
+                  </div>
+                </div>
+                <h1
+                  class="font-bold leading-[1.2] sm:leading-[72px] text-[40px] sm:text-[50px] lg:text-[60px] text-black tracking-[1.2px] sm:tracking-[2.4px]"
+                  style="font-family: 'DM Sans', sans-serif;"
+                >
+                  <p class="mb-0">Un Acoperis Sigur</p>
+                  <p>Din 1991</p>
+                </h1>
+                <p
+                  class="font-medium leading-[30px] text-[#767676] text-[16px] sm:text-[18px] lg:text-[20px] max-w-[500px]"
+                  style="font-family: 'DM Sans', sans-serif;"
+                >
+                  Fondată în 1991, cu o experiență de peste 20 ani în domeniu,
+                  firma IMCOP produce și comercializează țigle din beton. Grija
+                  noastră este legată de siguranța pe care trebuie să ți-o dea
+                  acoperișul casei tale.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side - Image -->
           <div
-            class="relative h-[150px] sm:h-[180px] lg:h-[200px] mb-8 sm:mb-12"
+            class="hidden lg:block absolute right-0 top-[90px] h-[626px] w-[646px] -z-10"
           >
-            <div
-              class="hidden lg:block absolute h-[180px] -left-[200px] top-[11px] w-[859px] -z-10"
-            >
-              <Image
-                src={rectangle35}
-                alt=""
-                class="block max-w-none size-full object-cover"
-              />
-            </div>
-            <div
-              class="absolute h-[180px] sm:h-[200px] lg:h-[233px] left-0 top-0 sm:top-[-17px] w-[250px] sm:w-[300px] lg:w-[349px]"
-            >
-              <Image
-                src={rectangle44}
-                alt=""
-                class="block max-w-none size-full object-cover"
-                width={349}
-                height={233}
-              />
-            </div>
-            <div
-              class="absolute flex flex-col font-bold justify-center left-[140px] sm:left-[180px] lg:left-[173px] text-[#ed1b24] text-[32px] sm:text-[48px] lg:text-[60px] top-1/2 -translate-y-1/2 tracking-[1.2px] sm:tracking-[2.4px]"
-              style="font-family: 'DM Sans', sans-serif;"
-            >
-              <p class="leading-[1.2] sm:leading-[72px]">Informatii tehnice</p>
+            <div class="flex-none rotate-180 scale-y-[-100%]">
+              <div class="h-[626px] relative w-[646px]">
+                <div
+                  class="absolute inset-0 overflow-hidden pointer-events-none"
+                >
+                  <Image
+                    src={adobeStock229227468}
+                    alt="Roof"
+                    class="absolute h-full left-[-34.49%] max-w-none top-[-1.13%] w-[145.49%] object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <main class="pb-10 sm:pb-16">
+    <!-- Products Section -->
+    <section class="py-12 sm:py-16 lg:py-20">
+      <!-- Tigla Avantaj -->
+      <div class="bg-neutral-50 flex flex-col lg:flex-row items-start">
         <div
-          class="flex flex-col lg:flex-row gap-8 lg:gap-[48px] mb-10 sm:mb-12"
+          class="flex-1 relative min-h-[400px] sm:min-h-[500px] lg:min-h-[680px] order-2 lg:order-1"
         >
-          <div class="flex-1 flex flex-col gap-6 sm:gap-8">
-            <div class="flex flex-col gap-3 sm:gap-[14px]">
-              <h2
-                class="font-medium leading-[30px] text-[#767676] text-[20px] sm:text-[24px]"
-                style="font-family: 'DM Sans', sans-serif;"
-              >
-                Indicaţii de montaj
-              </h2>
-              <div
-                class="font-normal text-[16px] sm:text-[18px] text-black space-y-2"
-                style="font-family: 'Roboto', sans-serif;"
-              >
-                <p class="leading-[30px]">
-                  <span class="font-bold">inclinare maximă</span>
-                  : 90° cu condiţia respectării prescripţiilor de fixare.
-                </p>
-                <p class="leading-[30px]">
-                  <span class="font-bold">inclinare minimă</span>
-                  : 22°
-                </p>
-                <p class="leading-[30px]">
-                  <span class="font-bold">distanţa dintre căpriori:</span>
-                  <span> Maximum 800 mm.</span>
-                </p>
-                <p class="leading-[30px]">
-                  <span class="font-bold">distanţa dintre şipci</span>
-                  : Maximum 343 mm.
-                </p>
-                <p class="leading-[30px]">
-                  <span class="font-bold">dimensiunea şipcilor</span>
-                  : 30 mm x 50 mm.
-                </p>
-                <p class="leading-[30px]">
-                  <span class="font-bold">necesarul de şipci</span>
-                  : 2,9-3,1 ml/mp în funcţie de suprapunere.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex flex-col gap-3 sm:gap-[14px]">
-              <h2
-                class="font-medium text-[#767676] text-[20px] sm:text-[24px]"
-                style="font-family: 'DM Sans', sans-serif;"
-              >
-                Mod de realizare
-              </h2>
-              <p
-                class="font-normal text-[16px] sm:text-[18px] text-black"
-                style="font-family: 'Roboto', sans-serif;"
-              >
-                Compactare şi extrudare de mare presiune.
-              </p>
-            </div>
-
-            <div class="flex flex-col gap-3 sm:gap-[14px]">
-              <h2
-                class="font-medium text-[#767676] text-[20px] sm:text-[24px]"
-                style="font-family: 'DM Sans', sans-serif;"
-              >
-                Reglementări
-              </h2>
-              <p
-                class="font-normal text-[16px] sm:text-[18px] text-black"
-                style="font-family: 'Roboto', sans-serif;"
-              >
-                Produs în conformitate cu SR EN 490 şi SR EN 491.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex-1 flex flex-col gap-3 sm:gap-[14px]">
-            <div class="flex gap-2 sm:gap-[10px] items-center">
-              <div
-                class="bg-[#ed1b24] rounded-[2px] shrink-0 size-[12px] sm:size-[15px]"
-              >
-              </div>
-              <h2
-                class="font-medium text-[#767676] text-[20px] sm:text-[24px]"
-                style="font-family: 'DM Sans', sans-serif;"
-              >
-                Prescripţii minime de fixare
-              </h2>
-            </div>
-            <div
-              class="font-normal text-[16px] sm:text-[18px] text-black space-y-2"
-              style="font-family: 'Roboto', sans-serif;"
-            >
-              <p>
-                <span class="font-bold">Inclinare între 22° şi 45°</span>
-                :
-              </p>
-              <p>
-                Toate ţiglele şi lateralele aflate pe perimetru se fixează cu
-                cuie.
-              </p>
-              <p>
-                <span class="font-bold">Inclinare peste 45°</span>
-                :
-              </p>
-              <p>Toate ţiglele şi lateralele se fixează cu cuie.</p>
-            </div>
-            <div
-              class="font-normal text-[16px] sm:text-[18px] text-black space-y-2"
-              style="font-family: 'Roboto', sans-serif;"
-            >
-              <p>Coamele se montează cu cleme.</p>
-              <p>
-                Găurile de fixare se pregătesc anterior montajului, prin găurire
-                cu burghiul.
-              </p>
-              <p>
-                Este necesar montarea sub ţiglă a unui strat de hidroizolaţie.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative h-px w-full my-8 sm:my-10">
-          <div class="absolute inset-0">
-            <Image
-              src={line6}
-              alt=""
-              class="block max-w-none size-full object-cover"
-            />
-          </div>
-        </div>
-
-        <div class="flex flex-col lg:flex-row gap-8 lg:gap-[48px] items-start">
-          <div class="flex-1 flex flex-col gap-3 sm:gap-[14px]">
-            <h2
-              class="font-medium text-[#767676] text-[20px] sm:text-[24px]"
-              style="font-family: 'DM Sans', sans-serif;"
-            >
-              Garanție
-            </h2>
-            <div
-              class="font-normal text-[16px] sm:text-[18px] text-black space-y-2"
-              style="font-family: 'Roboto', sans-serif;"
-            >
-              <p>
-                Ţiglele din beton produse de IMCOP sunt garantate 30 de ani de
-                la data livrării în condiţiile SR EN 490 şi SR EN 491, a
-                Declaraţiei de Performanţă şi a Certificatului de Garanţie
-                eliberate la livrarea produselor.
-              </p>
-              <p>Originalul IMCOP este marcat pe spatele țiglei astfel:</p>
-            </div>
-          </div>
+          <Image
+            src={avantaj}
+            alt="Tigla Avantaj"
+            class="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
+          />
           <div
-            class="w-full lg:w-[337px] h-[200px] sm:h-[208px] relative shrink-0"
+            class="hidden lg:block absolute h-[282px] left-[586px] shadow-[0px_0px_25px_4px_rgba(0,0,0,0.25)] top-[199px] w-[206px]"
           >
             <Image
-              src={imcop1}
-              alt="IMCOP"
-              class="block max-w-none size-full object-cover rounded"
+              src={rectangle32}
+              alt=""
+              class="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
             />
           </div>
         </div>
-      </main>
+        <div
+          class="box-border flex flex-col gap-6 sm:gap-[24px] h-auto lg:h-[680px] items-start justify-center px-6 sm:px-12 lg:pl-[160px] lg:pr-[100px] py-12 sm:py-16 lg:py-[80px] relative shrink-0 w-full lg:w-auto order-1 lg:order-2"
+        >
+          <h2
+            class="font-bold leading-[1.2] sm:leading-[64px] text-[#333333] text-[36px] sm:text-[44px] lg:text-[50px] tracking-[1.2px] sm:tracking-[2px]"
+            style="font-family: 'DM Sans', sans-serif;"
+          >
+            Tigla Avantaj
+          </h2>
+          <p
+            class="font-normal leading-[30px] text-[#333333] text-[16px] sm:text-[18px] max-w-[450px]"
+          >
+            Noul profil de țiglă Avantaj captivează prin suprafața sa dublu
+            curbată, care conferă acoperișului un aspect ondulat
+          </p>
+          <div
+            class="bg-[#ed1b24] h-[54px] relative rounded-[6px] shrink-0 w-full sm:w-[292.807px]"
+          >
+            <div
+              class="absolute flex flex-col font-bold inset-[25.93%_5.68%_25.93%_5.99%] justify-center leading-[0] text-[16px] sm:text-[18px] text-center text-neutral-50"
+            >
+              <p class="leading-[30px] whitespace-pre-wrap">Vezi produs</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <PreFooter />
-    </div>
+      <!-- Tigla Clasic -->
+      <div class="bg-neutral-50 flex flex-col lg:flex-row items-start">
+        <div
+          class="box-border flex flex-col gap-6 sm:gap-[24px] h-auto lg:h-[680px] items-start justify-center px-6 sm:px-12 lg:pl-[100px] lg:pr-[140px] py-12 sm:py-16 lg:py-[80px] relative shrink-0 w-full lg:w-auto"
+        >
+          <h2
+            class="font-bold leading-[1.2] sm:leading-[64px] text-[#333333] text-[36px] sm:text-[44px] lg:text-[50px] tracking-[1.2px] sm:tracking-[2px]"
+            style="font-family: 'DM Sans', sans-serif;"
+          >
+            Tigla Clasic
+          </h2>
+          <p
+            class="font-normal leading-[30px] text-[#333333] text-[16px] sm:text-[18px] max-w-[450px]"
+          >
+            Eternul clasic are o utilizare largă, el nu se demodează niciodată,
+            forma geometrică, regulată, adaptându-se perfect oricărui tip de
+            arhitectură.
+          </p>
+          <div
+            class="bg-[#ed1b24] h-[54px] relative rounded-[6px] shrink-0 w-full sm:w-[292.807px]"
+          >
+            <div
+              class="absolute flex flex-col font-bold inset-[25.93%_5.68%_25.93%_5.99%] justify-center leading-[0] text-[16px] sm:text-[18px] text-center text-neutral-50"
+            >
+              <p class="leading-[30px] whitespace-pre-wrap">Vezi produs</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-1 relative min-h-[400px] sm:min-h-[500px] lg:min-h-[680px]"
+        >
+          <Image
+            src={avantaj1}
+            alt="Tigla Clasic"
+            class="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
+          />
+          <div
+            class="hidden lg:block absolute h-[282px] left-[-103px] shadow-[0px_0px_25px_4px_rgba(0,0,0,0.25)] top-[199px] w-[206px]"
+          >
+            <Image
+              src={rectangle33}
+              alt=""
+              class="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Details Section -->
+    <section class="py-12 sm:py-16 lg:py-20">
+      <div class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-[98px] items-start lg:items-center"
+        >
+          <!-- Images Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[max-content] gap-4 sm:gap-6 lg:gap-0 justify-items-start w-full lg:w-auto"
+          >
+            <div
+              class="h-[300px] sm:h-[400px] lg:h-[461px] relative rounded-[6px] w-full sm:w-[300px] lg:w-[413px] lg:ml-0 lg:mt-0"
+            >
+              <div
+                class="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]"
+              >
+                <Image
+                  src={adobeStock192310307}
+                  alt=""
+                  class="absolute h-[98.49%] left-[-86.92%] max-w-none top-[1.08%] w-[246.49%] object-cover"
+                />
+              </div>
+            </div>
+            <div
+              class="h-[200px] sm:h-[250px] lg:h-[284px] relative rounded-[6px] w-full sm:w-[250px] lg:w-[341px] lg:ml-[42px] lg:mt-[301px]"
+            >
+              <div
+                class="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]"
+              >
+                <Image
+                  src={adobeStock72047399}
+                  alt=""
+                  class="absolute h-[100.12%] left-[-112.58%] max-w-none top-[-0.97%] w-[250.41%] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div
+            class="flex flex-col gap-8 sm:gap-12 lg:gap-[56.5px] items-start w-full lg:w-[490px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row gap-6 sm:gap-[31px] items-start w-full"
+            >
+              <div
+                class="flex flex-1 flex-col gap-4 sm:gap-[18px] items-start justify-center"
+              >
+                <div class="relative shrink-0 size-[40px] sm:size-[50px]">
+                  <Image
+                    src={hammerIcon}
+                    alt=""
+                    class="block max-w-none size-full"
+                  />
+                </div>
+                <p
+                  class="font-normal leading-[30px] text-[16px] sm:text-[18px] text-black"
+                >
+                  Rezistent la acțiuni mecanice si alte forte. Rezistent la
+                  acțiuni mecanice si alte forte
+                </p>
+              </div>
+              <div class="flex flex-1 flex-col gap-4 sm:gap-[18px] items-start">
+                <div class="relative shrink-0 size-[40px] sm:size-[50px]">
+                  <Image
+                    src={ecoIcon}
+                    alt=""
+                    class="block max-w-none size-full"
+                  />
+                </div>
+                <p
+                  class="font-normal leading-[30px] text-[16px] sm:text-[18px] text-black"
+                >
+                  Ecologic si prietenos cu mediul. Ecologic si prietenos cu
+                  mediul
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row gap-6 sm:gap-[31px] items-start w-full"
+            >
+              <div class="flex flex-1 flex-col gap-4 sm:gap-[18px] items-start">
+                <div class="relative shrink-0 size-[40px] sm:size-[50px]">
+                  <Image
+                    src={thunderstormIcon}
+                    alt=""
+                    class="block max-w-none size-full"
+                  />
+                </div>
+                <p
+                  class="font-normal leading-[30px] text-[16px] sm:text-[18px] text-black"
+                >
+                  Protejat impotriva ploilor, furtunilor si a incendiilor.
+                  Protejat impotriva ploilor, furtunilor si a incendiilor
+                </p>
+              </div>
+              <div class="flex flex-1 flex-col gap-4 sm:gap-[18px] items-start">
+                <div
+                  class="h-[40px] sm:h-[50px] relative shrink-0 w-[35px] sm:w-[43.75px]"
+                >
+                  <div class="absolute inset-[-2.4%_-2.29%_-2.39%_-2.29%]">
+                    <Image
+                      src={vectorIcon}
+                      alt=""
+                      class="block max-w-none size-full"
+                    />
+                  </div>
+                </div>
+                <p
+                  class="font-normal leading-[30px] text-[16px] sm:text-[18px] text-black"
+                >
+                  Din punct de vedere al rezistenței la variații de temperatură
+                  extreme
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 sm:gap-[18px] items-start w-full">
+              <div
+                class="overflow-clip relative shrink-0 size-[40px] sm:size-[50px]"
+              >
+                <div class="absolute inset-[10%]">
+                  <Image
+                    src={badgeCheckIcon}
+                    alt=""
+                    class="block max-w-none size-full"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex-1 font-normal leading-[30px] text-[16px] sm:text-[18px] text-black"
+              >
+                <p class="mb-0">IMCOP îți oferă UN ACOPERIȘ SIGUR!</p>
+                <p>Garantat 30 de ani</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Decorative Images -->
+    <section class="py-8 sm:py-12">
+      <div class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center"
+        >
+          <div
+            class="h-[200px] sm:h-[250px] lg:h-[279px] relative w-full sm:w-[250px] lg:w-[334px]"
+          >
+            <Image
+              src={rectangle49}
+              alt=""
+              class="block max-w-none size-full object-cover rounded"
+              width={334}
+              height={279}
+            />
+          </div>
+          <div
+            class="flex h-[200px] sm:h-[250px] lg:h-[279px] items-center justify-center w-full sm:w-[250px] lg:w-[334px]"
+          >
+            <div class="flex-none rotate-180 scale-y-[-100%]">
+              <div
+                class="h-[200px] sm:h-[250px] lg:h-[279px] relative w-full sm:w-[250px] lg:w-[334px]"
+              >
+                <Image
+                  src={rectangle45Home}
+                  alt=""
+                  class="block max-w-none size-full object-cover rounded"
+                  width={334}
+                  height={279}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <PreFooter />
     <Footer />
   </div>
 </Layout>

@@ -1,31 +1,54 @@
 ---
-import { Image } from 'astro:assets';
-import rectangle45 from '../assets/images/rectangle45.png';
-import rectangle46 from '../assets/images/rectangle46.png';
+import { Image } from "astro:assets";
+import rectangle45 from "../assets/images/rectangle45.png";
+import rectangle46 from "../assets/images/rectangle46.png";
 ---
 
 <section class="relative bg-neutral-50 py-12 sm:py-16 my-16 overflow-hidden">
   <div class="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col items-center justify-center gap-6 sm:gap-8 text-center">
-      <div class="font-bold text-[#767676] text-[16px] sm:text-[18px]" style="font-family: 'Roboto', sans-serif;">
+    <div
+      class="flex flex-col items-center justify-center gap-6 sm:gap-8 text-center"
+    >
+      <div class="font-bold text-[#767676] text-[16px] sm:text-[18px]">
         <p class="leading-[30px]">Ai intrebari suplimentare?</p>
       </div>
-      <div class="font-bold text-[#e47176] text-[24px] sm:text-[28px]" style="font-family: 'DM Sans', sans-serif;">
+      <div
+        class="font-bold text-[#ed1b24] text-[24px] sm:text-[28px]"
+        style="font-family: 'DM Sans', sans-serif;"
+      >
         <p class="leading-[30px]">+40-264-414041</p>
       </div>
-      <button class="bg-[#ed1b24] h-[50px] sm:h-[54px] rounded-[6px] px-6 sm:px-8 text-neutral-50 font-bold text-[16px] sm:text-[18px] hover:opacity-90 transition-opacity" style="font-family: 'Roboto', sans-serif;">
+      <button
+        class="bg-[#ed1b24] h-[50px] sm:h-[54px] rounded-[6px] px-6 sm:px-8 text-neutral-50 font-bold text-[16px] sm:text-[18px] hover:opacity-90 transition-opacity"
+      >
         Contacteaza un reprezentat local
       </button>
     </div>
   </div>
 
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute left-0 bottom-0 h-[200px] sm:h-[282px] w-[200px] sm:w-[401.413px] opacity-30 sm:opacity-100">
-      <Image src={rectangle45} alt="" class="block max-w-none size-full object-cover" width={401.413} height={282} />
+    <div
+      class="absolute left-0 bottom-0 h-[200px] sm:h-[282px] w-[200px] sm:w-[401.413px] opacity-30 sm:opacity-100"
+    >
+      <Image
+        src={rectangle45}
+        alt=""
+        class="block max-w-none size-full object-cover"
+        width={401.413}
+        height={282}
+      />
     </div>
-    <div class="absolute right-0 bottom-0 h-[200px] sm:h-[282px] w-[200px] sm:w-[401.413px] opacity-30 sm:opacity-100">
+    <div
+      class="absolute right-0 bottom-0 h-[200px] sm:h-[282px] w-[200px] sm:w-[401.413px] opacity-30 sm:opacity-100"
+    >
       <div class="rotate-180 h-full w-full">
-        <Image src={rectangle46} alt="" class="block max-w-none size-full object-cover" width={401.413} height={282} />
+        <Image
+          src={rectangle46}
+          alt=""
+          class="block max-w-none size-full object-cover"
+          width={401.413}
+          height={282}
+        />
       </div>
     </div>
   </div>

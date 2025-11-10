@@ -3,6 +3,10 @@
       "figma": {
         "url": "https://mcp.figma.com/mcp",
         "type": "http"
+      },
+      "Framelink MCP for Figma": {
+        "command": "npx",
+        "args": ["-y", "figma-developer-mcp", "--stdio"],
       }
     }
-  }
+}

@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.png";
+---
+
+<header class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+  <div class="flex gap-2 sm:gap-[10px] items-center justify-between">
+    <div class="flex gap-2 sm:gap-[10px] items-center">
+      <div
+        class="h-[24px] sm:h-[28.256px] w-[32px] sm:w-[38px] relative shrink-0"
+      >
+        <Image src={logo} alt="IMCOP Logo" class="block max-w-none size-full" />
+      </div>
+      <p
+        class="font-bold leading-normal text-[20px] sm:text-[24px] text-black"
+        style="font-family: 'Lora', serif;"
+      >
+        IMCOP
+      </p>
+    </div>
+    <nav
+      class="hidden md:flex font-medium gap-4 lg:gap-[28px] items-center text-[16px] lg:text-[18px] text-black"
+      style="font-family: 'Roboto', sans-serif;"
+    >
+      <a
+        href="#"
+        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+      >
+        Companie
+      </a>
+      <a
+        href="#"
+        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+      >
+        Produse
+      </a>
+      <span class="leading-normal">Informatii tehnice</span>
+      <a
+        href="#"
+        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+      >
+        Parteneri
+      </a>
+      <a
+        href="#"
+        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+      >
+        Contact
+      </a>
+    </nav>
+    <button class="md:hidden text-black" aria-label="Menu">
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</header>

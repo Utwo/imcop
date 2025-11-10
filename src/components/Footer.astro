@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import footerLogo from '../assets/images/footer-logo.png';
+import locationIcon from '../assets/images/location-icon.png';
+import emailIcon from '../assets/images/email-icon.png';
+import phoneIcon from '../assets/images/phone-icon.png';
+---
+
+<footer class="w-full bg-white mt-16 pt-12 pb-10">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
+      <div class="flex flex-col gap-2 items-start">
+        <div class="h-[50px] sm:h-[62px] w-[70px] sm:w-[83.379px] relative shrink-0">
+          <Image src={footerLogo} alt="IMCOP Logo" class="block max-w-none size-full" />
+        </div>
+        <p class="font-bold leading-normal text-[20px] sm:text-[24px] text-black" style="font-family: 'Lora', serif;">
+          IMCOP
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <div class="flex items-start gap-3">
+          <div class="w-5 h-5 shrink-0 mt-0.5">
+            <Image src={phoneIcon} alt="Phone" class="block max-w-none size-full" />
+          </div>
+          <p class="font-normal leading-normal text-[#333333] text-[15px]" style="font-family: 'Roboto', sans-serif;">
+            +40-264-414041
+          </p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-5 h-5 shrink-0 mt-0.5">
+            <Image src={emailIcon} alt="Email" class="block max-w-none size-full" />
+          </div>
+          <p class="font-normal leading-normal text-[#333333] text-[15px]" style="font-family: 'Roboto', sans-serif;">
+            imcop@imcop.ro
+          </p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-5 h-5 shrink-0 mt-0.5">
+            <Image src={locationIcon} alt="Location" class="block max-w-none size-full" />
+          </div>
+          <div class="font-normal leading-normal text-[#333333] text-[15px] whitespace-pre-wrap" style="font-family: 'Roboto', sans-serif;">
+            <p class="mb-0">400420, B-dul Nicolae Titulescu 16/12</p>
+            <p>Cluj-Napoca, Cluj</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 font-normal leading-normal text-[#333333] text-[15px]" style="font-family: 'Roboto', sans-serif;">
+        <a href="#" class="hover:opacity-70 transition-opacity">Companie</a>
+        <a href="#" class="hover:opacity-70 transition-opacity">Produse</a>
+        <a href="#" class="hover:opacity-70 transition-opacity">Informatii tehnice</a>
+        <a href="#" class="hover:opacity-70 transition-opacity">Parteneri</a>
+        <a href="#" class="hover:opacity-70 transition-opacity">Contact</a>
+      </div>
+    </div>
+
+    <div class="text-center pt-8 border-t border-gray-200">
+      <p class="font-normal leading-normal text-[#999999] text-[14px] sm:text-[15px]" style="font-family: 'Roboto', sans-serif;">
+        2020 © IMCOP S.R.L. | Toate drepturile rezervate. | www.imcop.ro
+      </p>
+    </div>
+  </div>
+</footer>

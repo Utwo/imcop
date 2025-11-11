@@ -1,63 +1,57 @@
 ---
-import { Image } from 'astro:assets';
-import footerLogo from '../assets/images/footer-logo.png';
-import locationIcon from '../assets/images/location-icon.png';
-import emailIcon from '../assets/images/email-icon.png';
-import phoneIcon from '../assets/images/phone-icon.png';
+import { Image } from "astro:assets";
+import footerLogo from "../assets/images/footer-logo.png";
+import locationIcon from "../assets/images/address-icon.svg";
+import emailIcon from "../assets/images/email-icon.svg";
+import phoneIcon from "../assets/images/telephone-icon.svg";
 ---
 
-<footer class="w-full bg-white mt-16 pt-12 pb-10">
-  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
-      <div class="flex flex-col gap-2 items-start">
-        <div class="h-[50px] sm:h-[62px] w-[70px] sm:w-[83.379px] relative shrink-0">
-          <Image src={footerLogo} alt="IMCOP Logo" class="block max-w-none size-full" />
-        </div>
-        <p class="font-bold leading-normal text-[20px] sm:text-[24px] text-black" style="font-family: 'Lora', serif;">
+<footer class="py-10">
+  <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+    <div class="my-12 grid gap-8 md:grid-cols-3 lg:gap-12">
+      <div>
+        <Image src={footerLogo} alt="IMCOP Logo" width={83} height={61} />
+        <span class="text-2xl font-bold" style="font-family: 'Lora', serif;">
           IMCOP
-        </p>
+        </span>
       </div>
 
       <div class="flex flex-col gap-4">
-        <div class="flex items-start gap-3">
-          <div class="w-5 h-5 shrink-0 mt-0.5">
-            <Image src={phoneIcon} alt="Phone" class="block max-w-none size-full" />
-          </div>
-          <p class="font-normal leading-normal text-[#333333] text-[15px]">
+        <div class="flex items-center gap-3">
+          <Image src={phoneIcon} alt="Phone" />
+          <a href="tel:+40264414041" aria-label="Telefon IMCOP">
             +40-264-414041
-          </p>
+          </a>
         </div>
-        <div class="flex items-start gap-3">
-          <div class="w-5 h-5 shrink-0 mt-0.5">
-            <Image src={emailIcon} alt="Email" class="block max-w-none size-full" />
-          </div>
-          <p class="font-normal leading-normal text-[#333333] text-[15px]">
+        <div class="flex items-center gap-3">
+          <Image src={emailIcon} alt="Email" />
+          <a href="mailto:imcop@imcop.ro" aria-label="Email IMCOP">
             imcop@imcop.ro
-          </p>
+          </a>
         </div>
-        <div class="flex items-start gap-3">
-          <div class="w-5 h-5 shrink-0 mt-0.5">
-            <Image src={locationIcon} alt="Location" class="block max-w-none size-full" />
-          </div>
-          <div class="font-normal leading-normal text-[#333333] text-[15px] whitespace-pre-wrap">
-            <p class="mb-0">400420, B-dul Nicolae Titulescu 16/12</p>
-            <p>Cluj-Napoca, Cluj</p>
-          </div>
+        <div class="flex items-center gap-3">
+          <Image src={locationIcon} alt="Location" />
+          <address>
+            <div>400420, B-dul Nicolae Titulescu 16/12</div>
+            <div>Cluj-Napoca, Cluj</div>
+          </address>
         </div>
       </div>
 
-      <div class="flex flex-col gap-3 font-normal leading-normal text-[#333333] text-[15px]">
-        <a href="#" class="hover:opacity-70 transition-opacity">Companie</a>
-        <a href="#" class="hover:opacity-70 transition-opacity">Produse</a>
-        <a href="#" class="hover:opacity-70 transition-opacity">Informatii tehnice</a>
-        <a href="#" class="hover:opacity-70 transition-opacity">Parteneri</a>
-        <a href="#" class="hover:opacity-70 transition-opacity">Contact</a>
-      </div>
+      <nav class="flex flex-col gap-4">
+        <a href="/" class="hover:opacity-70">Companie</a>
+        <a href="/produse" class="hover:opacity-70">Produse</a>
+        <a href="/informatii-tehnice" class="hover:opacity-70"
+          >Informatii tehnice</a
+        >
+        <a href="/parteneri" class="hover:opacity-70">Parteneri</a>
+        <a href="/contact" class="hover:opacity-70">Contact</a>
+      </nav>
     </div>
 
-    <div class="text-center pt-8 border-t border-gray-200">
-      <p class="font-normal leading-normal text-[#999999] text-[14px] sm:text-[15px]">
-        2020 © IMCOP S.R.L. | Toate drepturile rezervate. | www.imcop.ro
+    <div class="border-t border-neutral-300 pt-8 text-center">
+      <p class="text-sm text-neutral-400">
+        2025 © IMCOP S.R.L. | Toate drepturile rezervate. | www.imcop.ro
       </p>
     </div>
   </div>

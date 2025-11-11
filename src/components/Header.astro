@@ -3,80 +3,72 @@ import { Image } from "astro:assets";
 import logo from "../assets/images/logo.png";
 
 const currentPath = Astro.url.pathname;
-const isHomepage = currentPath === "/";
-const isTechnicalInfo = currentPath === "/informatii-tehnice";
 ---
 
-<header class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
-  <div class="flex gap-2 sm:gap-[10px] items-center justify-between">
-    <div class="flex gap-2 sm:gap-[10px] items-center">
-      <a href="/" class="flex gap-2 sm:gap-[10px] items-center">
-        <div
-          class="h-[24px] sm:h-[28.256px] w-[32px] sm:w-[38px] relative shrink-0"
-        >
-          <Image
-            src={logo}
-            alt="IMCOP Logo"
-            class="block max-w-none size-full"
-          />
-        </div>
-        <p
-          class="font-bold leading-normal text-[20px] sm:text-[24px] text-black"
-          style="font-family: 'Lora', serif;"
-        >
-          IMCOP
-        </p>
+<header class="mx-auto max-w-[1200px] py-4">
+  <div class="flex justify-between gap-2">
+    <a href="/" class="flex items-center gap-2 sm:gap-[10px]">
+      <Image src={logo} alt="IMCOP Logo" width={42} height={32} />
+      <p
+        class="text-[20px] leading-normal font-bold"
+        style="font-family: 'Arial', sans-serif;"
+      >
+        IMCOP
+      </p>
+    </a>
+    <nav class="hidden items-center gap-4 text-lg font-medium md:flex lg:gap-7">
+      <a
+        href="/"
+        class={`block transition-opacity ${
+          currentPath === "/" ? "border-b-2 border-primary" : "hover:opacity-60"
+        }`}
+      >
+        Companie
       </a>
-    </div>
-    <nav
-      class="hidden md:flex font-medium gap-4 lg:gap-[28px] items-center text-[16px] lg:text-[18px] text-black"
-    >
-      {
-        isHomepage ? (
-          <span class="leading-normal">Companie</span>
-        ) : (
-          <a
-            href="/"
-            class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
-          >
-            Companie
-          </a>
-        )
-      }
       <a
         href="/produse"
-        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+        class={`block transition-opacity ${
+          currentPath === "/produse"
+            ? "border-b-2 border-primary"
+            : "hover:opacity-60"
+        }`}
       >
         Produse
       </a>
-      {
-        isTechnicalInfo ? (
-          <span class="leading-normal">Informatii tehnice</span>
-        ) : (
-          <a
-            href="/informatii-tehnice"
-            class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
-          >
-            Informatii tehnice
-          </a>
-        )
-      }
       <a
-        href="#"
-        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+        href="/informatii-tehnice"
+        class={`block transition-opacity ${
+          currentPath === "/informatii-tehnice"
+            ? "border-b-2 border-primary"
+            : "hover:opacity-60"
+        }`}
+      >
+        Informatii tehnice
+      </a>
+      <a
+        href="/parteneri"
+        class={`block transition-opacity ${
+          currentPath === "/parteneri"
+            ? "border-b-2 border-primary"
+            : "hover:opacity-60"
+        }`}
       >
         Parteneri
       </a>
       <a
-        href="#"
-        class="block cursor-pointer leading-normal whitespace-nowrap hover:opacity-70 transition-opacity"
+        href="/contact"
+        class={`block transition-opacity ${
+          currentPath === "/contact"
+            ? "border-b-2 border-primary"
+            : "hover:opacity-60"
+        }`}
       >
         Contact
       </a>
     </nav>
-    <button class="md:hidden text-black" aria-label="Menu">
+    <button class="md:hidden" aria-label="Menu">
       <svg
-        class="w-6 h-6"
+        class="h-6 w-6"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"

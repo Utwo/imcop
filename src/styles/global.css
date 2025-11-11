@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+@theme {
+  --color-primary: #ed1b24;
+}
+
+/* Creates a light gray parallelogram with black triangular corners */
+.rectangle1-gradient::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-neutral-50);
+  clip-path: polygon(0% 0%, 80% 0%, 70% 100%, 0% 100%);
+}
+
+.rectangle2-gradient::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-neutral-100);
+  clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
 }

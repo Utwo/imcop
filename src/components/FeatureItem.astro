@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  icon: ImageMetadata;
+  description?: string;
+  iconWidth?: number;
+  iconHeight?: number;
+  fullWidth?: boolean;
+}
+
+const {
+  icon,
+  iconWidth = 40,
+  iconHeight = 40,
+  fullWidth = false,
+} = Astro.props;
+
+const containerClass = fullWidth
+  ? "flex gap-4"
+  : "flex flex-1 flex-col items-start gap-4";
+---
+
+<div class={containerClass}>
+  <Image
+    src={icon}
+    alt=""
+    width={iconWidth}
+    height={iconHeight}
+    class="block size-10"
+  />
+
+  <div>
+    <slot />
+  </div>
+</div>

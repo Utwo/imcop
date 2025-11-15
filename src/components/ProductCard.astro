@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  backgroundImage: ImageMetadata;
+  productImage: ImageMetadata;
+  productImageWidth?: number;
+  productImageHeight?: number;
+  title: string;
+  description: string;
+  linkUrl: string;
+  linkText?: string;
+  reverse?: boolean;
+}
+
+const {
+  backgroundImage,
+  productImage,
+  productImageWidth = 160,
+  productImageHeight = 200,
+  title,
+  description,
+  linkUrl,
+  linkText = "Vezi produs",
+  reverse = false,
+} = Astro.props;
+---
+
+<div
+  class={`flex flex-col bg-neutral-100 ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+>
+  <div
+    class="relative flex-1 bg-cover bg-center"
+    style={`background-image: url(${backgroundImage.src});`}
+  >
+    <Image
+      src={productImage}
+      alt={title}
+      width={productImageWidth}
+      height={productImageHeight}
+      class={`absolute inset-0 top-1/2 -translate-y-1/2 -translate-x-1/2 shadow-lg shadow-neutral-500 ${
+        reverse ? "left-0" : "left-full"
+      }`}
+    />
+  </div>
+  <div class="relative flex-1 py-64">
+    <div
+      class="m-auto flex max-w-[400px] shrink-0 flex-col justify-center gap-6"
+    >
+      <h2 class="text-4xl font-bold">{title}</h2>
+      <p>{description}</p>
+      <a
+        href={linkUrl}
+        class="bg-primary w-fit cursor-pointer rounded-md px-16 py-3 font-bold text-white transition-opacity hover:opacity-90"
+      >
+        {linkText}
+      </a>
+    </div>
+  </div>
+</div>

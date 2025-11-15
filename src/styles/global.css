@@ -1,11 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
 body {
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans", sans-serif;
+}
+
 @theme {
   --color-primary: #ed1b24;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 /* Creates a light gray parallelogram with black triangular corners */

@@ -1,33 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import PreFooter from "../components/PreFooter.astro";
 import ProductCard from "../components/ProductCard.astro";
 import FeatureItem from "../components/FeatureItem.astro";
 import { Image } from "astro:assets";
 import adobeStock229227468 from "../assets/images/adobe-stock-229227468.png";
-import avantaj from "../assets/images/avantaj.png";
-import avantajTigla from "../assets/images/avantaj-tigla.png";
-import avantaj1 from "../assets/images/avantaj1.png";
-import rectangle33 from "../assets/images/rectangle33.png";
+import avantajPhoto from "../assets/images/avantaj-photo.png";
+import clasicPhoto from "../assets/images/clasic-photo.png";
+import avantajTigla from "../assets/images/avantaj/tigla.png";
+import clasicTigla from "../assets/images/clasic/rosu-inchis-tile.jpg";
 import adobeStock192310307 from "../assets/images/adobe-stock-192310307.png";
 import adobeStock72047399 from "../assets/images/adobe-stock-72047399.png";
-import hammerIcon from "../assets/images/hammer-icon.png";
-import ecoIcon from "../assets/images/eco-icon.png";
-import thunderstormIcon from "../assets/images/thunderstorm-icon.png";
-import vectorIcon from "../assets/images/vector-icon.png";
-import badgeCheckIcon from "../assets/images/badge-check-icon.png";
-import rectangle45Home from "../assets/images/rectangle45-home.png";
-import rectangle49 from "../assets/images/rectangle49.png";
+import hammerIcon from "../assets/images/icons/hammer-icon.svg";
+import ecoIcon from "../assets/images/icons/eco-icon.svg";
+import thunderstormIcon from "../assets/images/icons/thunderstorm-icon.svg";
+import vectorIcon from "../assets/images/icons/vector-icon.svg";
+import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
 ---
 
 <Layout>
-  <!-- Intro/Hero Section -->
-
-  <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-    <Header />
-  </div>
   <section class="relative overflow-hidden">
     <!-- Right side - Background and Image -->
     <div
@@ -58,23 +48,23 @@ import rectangle49 from "../assets/images/rectangle49.png";
   <!-- Products Section -->
   <section class="py-12 sm:py-16 lg:py-20">
     <ProductCard
-      backgroundImage={avantaj}
+      backgroundImage={avantajPhoto}
       productImage={avantajTigla}
       productImageWidth={160}
       productImageHeight={200}
       title="Tigla Avantaj"
       description="Noul profil de țiglă Avantaj captivează prin suprafața sa dublu curbată, care conferă acoperișului un aspect ondulat"
-      linkUrl="/produse"
+      linkUrl="/produse-avantaj"
     />
 
     <ProductCard
-      backgroundImage={avantaj1}
-      productImage={rectangle33}
+      backgroundImage={clasicPhoto}
+      productImage={clasicTigla}
       productImageWidth={160}
       productImageHeight={200}
       title="Tigla Clasic"
       description="Eternul clasic are o utilizare largă, el nu se demodează niciodată, forma geometrică, regulată, adaptându-se perfect oricărui tip de arhitectură."
-      linkUrl="/produse"
+      linkUrl="/produse-clasic"
       reverse={true}
     />
   </section>
@@ -133,45 +123,6 @@ import rectangle49 from "../assets/images/rectangle49.png";
       </div>
     </div>
   </section>
-
-  <!-- Decorative Images Section -->
-  <section class="py-8 sm:py-12">
-    <div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-      <div
-        class="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6"
-      >
-        <div
-          class="relative h-[200px] w-full sm:h-[250px] sm:w-[250px] lg:h-[279px] lg:w-[334px]"
-        >
-          <Image
-            src={rectangle49}
-            alt=""
-            class="block size-full max-w-none rounded object-cover"
-            width={334}
-            height={279}
-          />
-        </div>
-        <div
-          class="flex h-[200px] w-full items-center justify-center sm:h-[250px] sm:w-[250px] lg:h-[279px] lg:w-[334px]"
-        >
-          <div class="flex-none scale-y-[-100%] rotate-180">
-            <div
-              class="relative h-[200px] w-full sm:h-[250px] sm:w-[250px] lg:h-[279px] lg:w-[334px]"
-            >
-              <Image
-                src={rectangle45Home}
-                alt=""
-                class="block size-full max-w-none rounded object-cover"
-                width={334}
-                height={279}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </Layout>
 
-<PreFooter />
-<Footer />
+<!-- <PreFooter /> -->

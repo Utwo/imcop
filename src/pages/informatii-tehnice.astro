@@ -1,20 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import PreFooter from "../components/PreFooter.astro";
 import { Image } from "astro:assets";
-import rectangle44 from "../assets/images/rectangle44.png";
-import rectangle35 from "../assets/images/rectangle35.png";
-import imcop1 from "../assets/images/imcop1.png";
-import line6 from "../assets/images/line6.png";
-import line7 from "../assets/images/line7.png";
+import garantie from "../assets/images/garantie.png";
 import Heading from "../components/Heading.astro";
 ---
 
 <Layout>
   <div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-    <Header />
     <main class="pb-10 text-lg sm:pb-16">
       <div
         class="rectangle1-gradient text-primary relative my-10 py-12 text-center text-5xl font-bold tracking-[1.2px] sm:my-18 sm:tracking-[2.4px]"
@@ -103,13 +96,11 @@ import Heading from "../components/Heading.astro";
           <p>Originalul IMCOP este marcat pe spatele țiglei astfel:</p>
         </div>
         <div class="h-fit shrink-0">
-          <Image src={imcop1} alt="IMCOP" width={337} height={208} />
+          <Image src={garantie} alt="Garantie" width={337} height={208} />
         </div>
       </div>
     </main>
 
     <PreFooter />
   </div>
-
-  <Footer />
 </Layout>

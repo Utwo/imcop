@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.svg";
 
 const currentPath = Astro.url.pathname;
 ---
@@ -26,9 +26,9 @@ const currentPath = Astro.url.pathname;
         Companie
       </a>
       <a
-        href="/produse"
+        href="/produse-clasic"
         class={`block transition-opacity ${
-          currentPath === "/produse"
+          currentPath === "/produse-clasic"
             ? "border-b-2 border-primary"
             : "hover:opacity-60"
         }`}

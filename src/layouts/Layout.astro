@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -7,14 +9,18 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>IMCOP - Informații Tehnice</title>
   </head>
   <body class="bg-white text-black">
+    <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <Header />
+    </div>
     <slot />
+    <Footer />
   </body>
 </html>
 

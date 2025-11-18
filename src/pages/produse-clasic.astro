@@ -1,0 +1,273 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TileColorSwatch from "../components/TileColorSwatch.astro";
+import TileSpecification from "../components/TileSpecification.astro";
+import { Image } from "astro:assets";
+import heroBackground from "../assets/images/hero-background-7757b6.png";
+import accessoriesTiles from "../assets/images/clasic/accessories-tiles.jpg";
+import teracotTile from "../assets/images/clasic/teracot-tile.jpg";
+import rosuInchisTile from "../assets/images/clasic/rosu-inchis-tile.jpg";
+import maroTile from "../assets/images/clasic/maro-tile.jpg";
+import negruTile from "../assets/images/clasic/negru-tile.jpg";
+import anticTile from "../assets/images/clasic/antic-tile.jpg";
+import griTile from "../assets/images/clasic/gri-tile.jpg";
+import aerisire from "../assets/images/clasic/aerisire.jpg";
+import tiglaClasic from "../assets/images/clasic/tigla-clasic.jpg";
+import lateralaStanga from "../assets/images/clasic/laterala-stanga.jpg";
+---
+
+<Layout>
+  <section class="relative pt-26">
+    <!-- Background Image with Gradient Overlay -->
+    <div class="absolute inset-0 z-0">
+      <Image
+        src={heroBackground}
+        alt="House with tiled roof"
+        class="h-full w-full object-cover"
+      />
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-linear-to-b from-black/60 via-transparent to-white"
+      >
+      </div>
+    </div>
+
+    <!-- Overlay Content -->
+    <div class="relative z-10 mx-auto mt-80 max-w-[1200px]">
+      <div class="mx-4 flex justify-end gap-2">
+        <a
+          href="/produse-clasic"
+          class="bg-primary cursor-pointer rounded-t-md px-20 py-3 text-lg font-bold text-white"
+          aria-pressed="true"
+        >
+          CLASIC
+        </a>
+        <a
+          href="/produse-avantaj"
+          class="cursor-pointer rounded-t-md bg-gray-500 px-20 py-3 text-lg font-bold text-white transition-all hover:bg-gray-600"
+          aria-pressed="false"
+        >
+          AVANTAJ
+        </a>
+      </div>
+
+      <div
+        class="flex flex-col justify-between gap-8 rounded-md bg-white px-8 pt-10 lg:flex-row lg:gap-12"
+      >
+        <!-- Left side - Product Info -->
+        <div>
+          <!-- Product Title -->
+          <h1 class="text-primary mb-6 text-3xl font-bold">
+            Țiglă din beton clasic
+          </h1>
+
+          <!-- Product Description -->
+          <div class="max-w-[642px] space-y-4">
+            <p>
+              Eternul clasic are o utilizare largă, el nu se demodează
+              niciodată, forma geometrică, regulată, adaptându-se perfect
+              oricărui tip de arhitectură.
+            </p>
+            <p>
+              Astfel, simplitatea formelor va conferi acoperișului dumneavoastră
+              o ținută plină de caracter și distincție atât acum cât și peste 50
+              de ani.
+            </p>
+            <div class="mb-12 lg:mb-16">
+              <Image
+                src={accessoriesTiles}
+                alt="Tile accessories"
+                class="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side - Catalog -->
+        <div>
+          <h2 class="mb-4 text-xl">Catalog</h2>
+          <ul class="list-disc space-y-3 pl-5">
+            <li>
+              <a
+                href="/public/download/DeclaratiedeperformantaClasic2021.pdf"
+                target="_blank"
+                class="underline">Declarație de performanță</a
+              >
+            </li>
+            <li>
+              <a
+                href="/public/download/catalogCertificatdegarantieonline.pdf"
+                target="_blank"
+                class="underline">Certificat de garanție</a
+              >
+            </li>
+            <li>
+              <a
+                href="/public/download/catalogPliantseptembrie2017.pdf"
+                target="_blank"
+                class="underline">Pliant produse</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button
+      class="absolute top-1/2 left-4 z-20 h-10 w-10 -translate-y-1/2 transition-opacity hover:opacity-80 lg:left-20"
+      aria-label="Previous"
+    >
+      <svg
+        class="h-full w-full"
+        fill="rgba(255, 255, 255, 0.8)"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+        ></path>
+      </svg>
+    </button>
+    <button
+      class="absolute top-1/2 right-4 z-20 h-10 w-10 -translate-y-1/2 transition-opacity hover:opacity-80 lg:right-20"
+      aria-label="Next"
+    >
+      <svg
+        class="h-full w-full"
+        fill="rgba(255, 255, 255, 0.8)"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+        ></path>
+      </svg>
+    </button>
+  </section>
+
+  <!-- Products Section -->
+  <section>
+    <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <!-- Available Colors Section -->
+      <h2 class="mb-4 text-2xl font-medium text-gray-500">
+        Culori disponibile
+      </h2>
+      <p>Pentru țigla CLASIC, vă punem la dispoziție 6 variante de culoare:</p>
+    </div>
+
+    <!-- Color Swatches with Background Frames -->
+    <div class="mx-auto mt-6 grid grid-cols-2 sm:grid-cols-3">
+      <TileColorSwatch
+        image={teracotTile}
+        alt="Teracot tile"
+        label="teracot"
+        backgroundColor="#A34A28"
+      />
+      <TileColorSwatch
+        image={rosuInchisTile}
+        alt="Roșu închis tile"
+        label="roșu închis"
+        backgroundColor="#692D23"
+      />
+      <TileColorSwatch
+        image={maroTile}
+        alt="Maro tile"
+        label="maro"
+        backgroundColor="#4E2D34"
+      />
+      <TileColorSwatch
+        image={negruTile}
+        alt="Negru tile"
+        label="negru"
+        backgroundColor="#676560"
+      />
+      <TileColorSwatch
+        image={anticTile}
+        alt="Antic tile"
+        label="antic"
+        backgroundColor="#463835"
+      />
+      <TileColorSwatch
+        image={griTile}
+        alt="Gri tile"
+        label="gri"
+        backgroundColor="#575A69"
+      />
+    </div>
+
+    <div class="mx-auto mt-12 max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <!-- Characteristics Section -->
+      <div>
+        <h2 class="mb-4 text-2xl font-medium text-gray-500">Caracteristici</h2>
+
+        <!-- General Properties -->
+        <div class="mb-8 space-y-2">
+          <p><strong>Suprafață</strong>: netedă</p>
+          <p>
+            <strong>Material</strong>: nisip, ciment, apă, pigmenți anorganici
+          </p>
+        </div>
+
+        <!-- Product Specifications with Tile Shapes Image -->
+        <div class="flex flex-col gap-4">
+          <TileSpecification
+            title="Tiglă"
+            image={tiglaClasic}
+            imageAlt="Tile shapes"
+          >
+            <ul class="space-y-1">
+              <li>Dimensiuni: 418 mm x 330 mm.</li>
+              <li>Suprapunere pe lungime: Minimum 75 mm.</li>
+              <li>Lungime utila: Maximum 343 mm.</li>
+              <li>Latime utila: 298 mm.</li>
+              <li>
+                Necesar: 9,8 tigle/mp la o suprapunere pe lungime de 75 mm
+              </li>
+              <li>10,6 tigle/mp la o suprapunere pe lungime de 100 mm.</li>
+              <li>Greutate: 4,3 Kg/bucata.</li>
+            </ul>
+          </TileSpecification>
+
+          <TileSpecification
+            title="Laterale"
+            image={lateralaStanga}
+            imageAlt="Tile shapes"
+          >
+            <ul class="space-y-1">
+              <li>Dimensiuni:L = 400 mm</li>
+              <li>Necesar: 3 bucati/ml.</li>
+              <li>Greutate: 3,8 kg/bucata.</li>
+            </ul>
+          </TileSpecification>
+
+          <TileSpecification
+            title="Aerisire"
+            image={aerisire}
+            imageAlt="Tile shapes"
+          >
+            <ul class="space-y-1">
+              <li>Dimensiuni: 418 x 330 mm</li>
+              <li>Necesar: în functie de configuratia acoperișului.</li>
+              <li>Greutate: 5,3 kg/bucata.</li>
+            </ul>
+          </TileSpecification>
+
+          <!-- Call to Action Button -->
+          <div class="mt-12 flex justify-center">
+            <a
+              href="/produse-avantaj"
+              class="bg-primary cursor-pointer rounded-md px-8 py-3 text-lg font-bold text-white transition-all hover:opacity-80"
+            >
+              Vezi si tigla Avantaj
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      li::marker {
+        color: var(--color-primary);
+      }
+    </style>
+  </section>
+</Layout>

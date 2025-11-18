@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PreFooter from "../components/PreFooter.astro";
+import PageTitle from "../components/PageTitle.astro";
+---
+
+<Layout>
+  <div class="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+    <main class="pb-10 text-lg sm:pb-16">
+      <PageTitle title="Contact" />
+      <section class="mt-12 grid gap-8 sm:mt-16 sm:gap-12 md:grid-cols-2">
+        <article class="rounded-lg p-6 shadow-sm sm:p-8">
+          <h2 class="mb-4 text-2xl font-bold">Sediul social</h2>
+          <address class="text-neutral-700 not-italic">
+            <p class="mb-2 leading-relaxed">
+              <span class="block">400420, B-dul Nicolae Titulescu 16/12</span>
+              <span class="block">Cluj-Napoca, Cluj</span>
+            </p>
+            <p class="mt-4">
+              <span class="font-semibold">Tel/Fax:</span>
+              <a
+                href="tel:+40264414041"
+                class="text-primary ml-2 hover:underline"
+                aria-label="Telefon: +40-264-414041"
+              >
+                +40-264-414041
+              </a>
+            </p>
+          </address>
+        </article>
+
+        <article class="rounded-lg p-6 shadow-sm sm:p-8">
+          <h2 class="mb-4 text-2xl font-bold">Fabrica</h2>
+          <address class="text-neutral-700 not-italic">
+            <p class="mb-2 leading-relaxed">
+              <span class="block">515900, Str. Octavian Goga 56</span>
+              <span class="block">Teius, Alba</span>
+            </p>
+            <p class="mt-4">
+              <span class="font-semibold">Tel/Fax:</span>
+              <a
+                href="tel:+40258851856"
+                class="text-primary ml-2 hover:underline"
+                aria-label="Telefon: +40-258-851856"
+              >
+                +40-258-851856
+              </a>
+            </p>
+          </address>
+        </article>
+      </section>
+    </main>
+
+    <PreFooter />
+  </div>
+</Layout>

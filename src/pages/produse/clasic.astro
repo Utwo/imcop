@@ -1,0 +1,120 @@
+---
+import ProductPage from "../../components/ProductPage.astro";
+import heroBackground from "../../assets/images/hero-background-7757b6.png";
+import accessoriesTiles from "../../assets/images/clasic/accessories-tiles.jpg";
+import teracotTile from "../../assets/images/clasic/teracot-tile.jpg";
+import rosuInchisTile from "../../assets/images/clasic/rosu-inchis-tile.jpg";
+import maroTile from "../../assets/images/clasic/maro-tile.jpg";
+import negruTile from "../../assets/images/clasic/negru-tile.jpg";
+import anticTile from "../../assets/images/clasic/antic-tile.jpg";
+import griTile from "../../assets/images/clasic/gri-tile.jpg";
+import aerisire from "../../assets/images/clasic/aerisire.jpg";
+import tiglaClasic from "../../assets/images/clasic/tigla-clasic.jpg";
+import lateralaStanga from "../../assets/images/clasic/laterala-stanga.jpg";
+---
+
+<ProductPage
+  productType="clasic"
+  title="Țiglă din beton clasic"
+  description={[
+    "Eternul clasic are o utilizare largă, el nu se demodează niciodată, forma geometrică, regulată, adaptându-se perfect oricărui tip de arhitectură.",
+    "Astfel, simplitatea formelor va conferi acoperișului dumneavoastră o ținută plină de caracter și distincție atât acum cât și peste 50 de ani.",
+  ]}
+  accessoriesImage={accessoriesTiles}
+  catalogLinks={[
+    {
+      label: "Declarație de performanță",
+      href: "/public/download/DeclaratiedeperformantaClasic2021.pdf",
+    },
+    {
+      label: "Certificat de garanție",
+      href: "/public/download/catalogCertificatdegarantieonline.pdf",
+    },
+    {
+      label: "Pliant produse",
+      href: "/public/download/catalogPliantseptembrie2017.pdf",
+    },
+  ]}
+  colorsIntro="Pentru țigla CLASIC, vă punem la dispoziție variante de culoare:"
+  colorSwatches={[
+    {
+      image: teracotTile,
+      alt: "Teracot tile",
+      label: "teracot",
+      backgroundColor: "#A34A28",
+    },
+    {
+      image: rosuInchisTile,
+      alt: "Roșu închis tile",
+      label: "roșu închis",
+      backgroundColor: "#692D23",
+    },
+    {
+      image: maroTile,
+      alt: "Maro tile",
+      label: "maro",
+      backgroundColor: "#4E2D34",
+    },
+    {
+      image: negruTile,
+      alt: "Negru tile",
+      label: "negru",
+      backgroundColor: "#676560",
+    },
+    {
+      image: anticTile,
+      alt: "Antic tile",
+      label: "antic",
+      backgroundColor: "#463835",
+    },
+    {
+      image: griTile,
+      alt: "Gri tile",
+      label: "gri",
+      backgroundColor: "#575A69",
+    },
+  ]}
+  surface="netedă"
+  material="nisip, ciment, apă, pigmenți anorganici"
+  specifications={[
+    {
+      title: "Tiglă",
+      image: tiglaClasic,
+      imageAlt: "Tile shapes",
+      details: [
+        "<strong>Dimensiuni:</strong> 418 mm x 330 mm.",
+        "<strong>Suprapunere pe lungime:</strong> Minimum 75 mm.",
+        "<strong>Lungime utila:</strong> Maximum 343 mm.",
+        "<strong>Latime utila:</strong> 298 mm.",
+        "<strong>Necesar:</strong> 9,8 tigle/mp la o suprapunere pe lungime de 75 mm",
+        "10,6 tigle/mp la o suprapunere pe lungime de 100 mm.",
+        "<strong>Greutate:</strong> 4,3 Kg/bucata.",
+      ],
+    },
+    {
+      title: "Laterale",
+      image: lateralaStanga,
+      imageAlt: "Tile shapes",
+      details: [
+        "<strong>Dimensiuni:</strong>L = 400 mm",
+        "<strong>Necesar:</strong> 3 bucati/ml.",
+        "<strong>Greutate:</strong> 3,8 kg/bucata.",
+      ],
+    },
+    {
+      title: "Aerisire",
+      image: aerisire,
+      imageAlt: "Tile shapes",
+      details: [
+        "<strong>Dimensiuni:</strong> 418 x 330 mm",
+        "<strong>Necesar:</strong> în functie de configuratia acoperișului.",
+        "<strong>Greutate:</strong> 5,3 kg/bucata.",
+      ],
+    },
+  ]}
+  ctaButton={{
+    href: "/produse/avantaj",
+    text: "Vezi si tigla Avantaj",
+  }}
+  heroBackground={heroBackground}
+/>

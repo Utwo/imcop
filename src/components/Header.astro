@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.svg";
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="mx-auto max-w-[1200px] py-4">
+<header class="mx-auto max-w-[1200px] px-4 py-4">
   <div class="flex justify-between gap-2">
     <a href="/" class="flex items-center gap-2 sm:gap-[10px]">
       <Image src={logo} alt="IMCOP Logo" width={42} height={32} />
@@ -26,9 +26,9 @@ const currentPath = Astro.url.pathname;
         Companie
       </a>
       <a
-        href="/produse-clasic"
+        href="/produse/clasic"
         class={`block transition-opacity ${
-          currentPath === "/produse-clasic"
+          currentPath === "/produse/clasic"
             ? "border-b-2 border-primary"
             : "hover:opacity-60"
         }`}

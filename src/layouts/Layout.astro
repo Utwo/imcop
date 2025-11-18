@@ -16,19 +16,9 @@ import Header from "../components/Header.astro";
     <title>IMCOP - Informații Tehnice</title>
   </head>
   <body class="bg-white text-black">
-    <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-      <Header />
-    </div>
+    <Header />
+
     <slot />
     <Footer />
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

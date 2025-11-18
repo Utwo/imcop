@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import rectangle45 from "../assets/images/rectangle45.png";
 import rectangle46 from "../assets/images/rectangle46.png";
+import Button from "./Button.astro";
 ---
 
 <section class="relative my-16 overflow-hidden bg-neutral-50 sm:py-16">
@@ -18,11 +19,7 @@ import rectangle46 from "../assets/images/rectangle46.png";
       >
         <p class="leading-[30px]">+40-264-414041</p>
       </div>
-      <button
-        class="bg-primary h-[50px] rounded-[6px] px-6 text-[16px] font-bold text-neutral-50 transition-opacity hover:opacity-90 sm:h-[54px] sm:px-8 sm:text-[18px]"
-      >
-        Contacteaza un reprezentat local
-      </button>
+      <Button href="/contact"> Contacteaza un reprezentat local </Button>
     </div>
   </div>
 

@@ -1,0 +1,120 @@
+---
+import ProductPage from "../../components/ProductPage.astro";
+import heroBackground from "../../assets/images/hero-background-7757b6.png";
+import gamaAvantaj from "../../assets/images/avantaj/gama-avantaj.jpg";
+import aerisireAvantaj from "../../assets/images/avantaj/aerisire-avantaj.jpg";
+import lateralaStangaAvantaj from "../../assets/images/avantaj/laterala-stanga-avantaj.jpg";
+import tiglaAvantaj from "../../assets/images/avantaj/tigla-avantaj.jpg";
+import teracotTile from "../../assets/images/avantaj/teracot-tile.png";
+import rosuInchisTile from "../../assets/images/avantaj/rosu-inchis-tile.png";
+import anticTile from "../../assets/images/avantaj/antic-tile.png";
+import maroTile from "../../assets/images/avantaj/maro-tile.png";
+import negruTile from "../../assets/images/avantaj/negru-tile.png";
+import griTile from "../../assets/images/avantaj/gri-tile.png";
+---
+
+<ProductPage
+  productType="avantaj"
+  title="Țiglă din beton Avantaj"
+  description={[
+    "Noul profil de țiglă Avantaj captivează prin suprafața sa dublu curbată, care conferă acoperișului un aspect ondulat, elegant, cu linii blânde, creînd un joc de lumini și umbre extrem de armonios, de o expresivitate optică deosebită.",
+  ]}
+  accessoriesImage={gamaAvantaj}
+  catalogLinks={[
+    {
+      label: "Declarație de performanță",
+      href: "/public/download/DeclaratiedeperformantaAvantaj2021.pdf",
+    },
+    {
+      label: "Certificat de garanție",
+      href: "/public/download/catalogCertificatdegarantieonline.pdf",
+    },
+    {
+      label: "Pliant produse",
+      href: "/public/download/catalogPliantseptembrie2017.pdf",
+    },
+  ]}
+  colorsIntro="Pentru țigla AVANTAJ, vă punem la dispoziție variante de culoare:"
+  colorSwatches={[
+    {
+      image: teracotTile,
+      alt: "Teracot tile",
+      label: "teracot",
+      backgroundColor: "#A34A28",
+    },
+    {
+      image: rosuInchisTile,
+      alt: "Rosu inchis tile",
+      label: "rosu inchis",
+      backgroundColor: "#692D23",
+    },
+    {
+      image: maroTile,
+      alt: "Maro tile",
+      label: "maro",
+      backgroundColor: "#4E2D34",
+    },
+    {
+      image: negruTile,
+      alt: "Negru tile",
+      label: "negru",
+      backgroundColor: "#676560",
+    },
+    {
+      image: anticTile,
+      alt: "Antic tile",
+      label: "antic",
+      backgroundColor: "#463835",
+    },
+    {
+      image: griTile,
+      alt: "Gri tile",
+      label: "gri",
+      backgroundColor: "#575A69",
+    },
+  ]}
+  surface="netedă"
+  material="nisip, ciment, apă, pigmenți anorganici"
+  specifications={[
+    {
+      title: "Tiglă",
+      image: tiglaAvantaj,
+      imageAlt: "Avantaj tile shapes",
+      details: [
+        "<strong>Dimensiuni:</strong> 418 mm x 330 mm.",
+        "<strong>Suprapunere pe lungime:</strong> Minimum 75 mm.",
+        "<strong>Lungime utila:</strong> Maximum 343 mm.",
+        "<strong>Latime utila:</strong> 298 mm.",
+        "<strong>Necesar:</strong> 9,8 tigle/mp la o suprapunere pe lungime de 75 mm",
+        "10,6 tigle/mp la o suprapunere pe lungime de 100 mm.",
+        "<strong>Greutate:</strong> 4,1 Kg/bucata.",
+      ],
+    },
+    {
+      title: "Laterale",
+      image: lateralaStangaAvantaj,
+      imageAlt: "Avantaj lateral tile shapes",
+      details: [
+        "<strong>Dimensiuni:</strong> 418mm x 350mm x 140mm.",
+        "<strong>Latime utila:</strong> 280mm.",
+        "<strong>Necesar:</strong> în functie de configuratia acoperișului. 3 bucati/ml de pazie.",
+        "<strong>Greutate:</strong> 7,3 kg/bucata.",
+      ],
+    },
+    {
+      title: "Aerisire",
+      image: aerisireAvantaj,
+      imageAlt: "Avantaj ventilation tile shapes",
+      details: [
+        "<strong>Dimensiuni:</strong> 418 x 330 mm",
+        "<strong>Necesar:</strong> în functie de configuratia acoperișului.",
+        "<strong>Greutate:</strong> 5,1 kg/bucata.",
+      ],
+    },
+  ]}
+  ctaButton={{
+    href: "/produse/clasic",
+    text: "Vezi si tigla Clasic",
+  }}
+  heroBackground={heroBackground}
+/>

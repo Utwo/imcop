@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import Button from "./Button.astro";
 
 interface Props {
   backgroundImage: ImageMetadata;
@@ -38,7 +39,7 @@ const {
       alt={title}
       width={productImageWidth}
       height={productImageHeight}
-      class={`absolute inset-0 top-1/2 -translate-y-1/2 -translate-x-1/2 shadow-lg shadow-neutral-500 ${
+      class={`absolute inset-0 top-1/2 -translate-y-1/2 -translate-x-1/2 drop-shadow-xl drop-shadow-black/50 ${
         reverse ? "left-0" : "left-full"
       }`}
     />
@@ -49,12 +50,9 @@ const {
     >
       <h2 class="text-4xl font-bold">{title}</h2>
       <p>{description}</p>
-      <a
-        href={linkUrl}
-        class="bg-primary w-fit cursor-pointer rounded-md px-16 py-3 font-bold text-white transition-opacity hover:opacity-90"
-      >
+      <Button href={linkUrl}>
         {linkText}
-      </a>
+      </Button>
     </div>
   </div>
 </div>

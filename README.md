@@ -1,46 +1,57 @@
-# Astro Starter Kit: Basics
+# IMCOP - Concrete Roof Tiles Website
 
-```sh
-npm create astro@latest -- --template basics
+A modern, responsive website for IMCOP, a Romanian company specializing in the production and sale of concrete roof tiles (țigle din beton). Founded in 1991, IMCOP has over 20 years of experience in the industry.
+
+## 🏗️ About
+
+IMCOP produces and commercializes high-quality concrete roof tiles with a focus on safety and durability. The website showcases their product lines, technical specifications, and company information.
+
+## 🚀 Technologies
+
+- **[Astro](https://astro.build)** - Modern web framework for building fast, content-focused websites
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Vite](https://vitejs.dev/)** - Next-generation frontend tooling
+
+## 📋 Prerequisites
+
+- **Node.js** (v18 or higher recommended)
+- **pnpm** (package manager)
+
+## 🛠️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd imcop
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. Install dependencies:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+pnpm install
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 💻 Development
 
-## 🧞 Commands
+Start the development server:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+pnpm dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+The site will be available at `http://localhost:4321`
 
-## 👀 Want to learn more?
+## 🏭 Build
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Build the site for production:
+
+```bash
+pnpm build
+```
+
+Preview the production build locally:
+
+```bash
+pnpm preview
+```

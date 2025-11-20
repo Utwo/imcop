@@ -1,0 +1,35 @@
+---
+interface Props {
+  streetAddress: string;
+  city: string;
+  phoneLabel?: string;
+  phoneNumber: string;
+  title: string;
+}
+
+const {
+  streetAddress,
+  city,
+  title,
+  phoneLabel = "Tel/Fax:",
+  phoneNumber,
+} = Astro.props;
+---
+
+<article class="rounded-lg border border-neutral-200 p-6 shadow-sm sm:p-8">
+  <h2 class="mb-4 text-2xl font-bold">{title}</h2>
+  <p class="mb-2 leading-relaxed">
+    <span class="block">{streetAddress}</span>
+    <span class="block">{city}</span>
+  </p>
+  <p class="mt-4">
+    <span class="font-semibold">{phoneLabel}</span>
+    <a
+      href={`tel:${phoneNumber.replace(/[-\s]/g, "")}`}
+      class="text-primary ml-2 hover:underline"
+      aria-label={`Telefon: ${phoneNumber}`}
+    >
+      {phoneNumber}
+    </a>
+  </p>
+</article>

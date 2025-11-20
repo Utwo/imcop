@@ -55,3 +55,10 @@ Preview the production build locally:
 ```bash
 pnpm preview
 ```
+
+TODO:
+
+- fix homepage
+- fix product page
+- add accesorii to the product page
+- make it responsive

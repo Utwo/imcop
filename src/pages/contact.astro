@@ -62,22 +62,24 @@ const representatives: Representative[] = [
 ---
 
 <Layout>
-  <div class="mx-auto w-full max-w-[1200px] px-4 py-4">
+  <div class="mx-auto w-full max-w-[1200px] p-4">
     <main class="pb-10 text-lg sm:pb-16">
       <PageTitle title="Contact" />
-      <section class="mt-12 grid gap-8 sm:mt-16 sm:gap-12 md:grid-cols-2">
-        <AddressInfo
-          title="Sediul social"
-          streetAddress="400420, B-dul Nicolae Titulescu 16/12"
-          city="Cluj-Napoca, Cluj"
-          phoneNumber="+40-264-414041"
-        />
-        <AddressInfo
-          title="Fabrica"
-          streetAddress="515900, Str. Octavian Goga 56"
-          city="Teius, Alba"
-          phoneNumber="+40-258-851856"
-        />
+      <section class="mt-12 sm:mt-16">
+        <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:gap-10">
+          <AddressInfo
+            title="Sediul social"
+            streetAddress="400420, B-dul Nicolae Titulescu 16/12"
+            city="Cluj-Napoca, Cluj"
+            phoneNumber="+40-264-414041"
+          />
+          <AddressInfo
+            title="Fabrica"
+            streetAddress="515900, Str. Octavian Goga 56"
+            city="Teius, Alba"
+            phoneNumber="+40-258-851856"
+          />
+        </div>
       </section>
       <section class="mt-12 sm:mt-16">
         <Heading text="Reprezentanți zonali" />

@@ -21,22 +21,24 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
   <section class="relative overflow-hidden">
     <!-- Right side - Background and Image -->
     <div
-      class="absolute top-0 right-0 -z-10 h-full w-3xl bg-linear-to-br from-[#ABCEFF] to-[#E0EBFD] bg-bottom bg-no-repeat"
-      style={`background-image: url(${adobeStock229227468.src}), linear-gradient(var(--tw-gradient-stops)); transform: scaleX(-1);`}
+      class="absolute top-0 right-0 -z-10 h-full w-4xl bg-linear-to-br from-[#ABCEFF] to-[#E0EBFD]"
+      style={`background: url(${adobeStock229227468.src}) no-repeat bottom 0 left -300px, linear-gradient(var(--tw-gradient-stops)); transform: scaleX(-1); background-size: 100%;`}
     >
     </div>
 
     <!-- Left side - Text content -->
     <div
-      class="rectangle1-gradient relative my-16 max-w-[1200px] px-4 sm:px-6 lg:px-8"
+      class="rectangle1-gradient relative px-4 sm:px-6 md:my-16 md:mr-26 lg:px-8"
     >
-      <div class="mx-auto flex max-w-[800px] flex-col gap-6 px-4 py-30">
+      <div
+        class="mx-auto flex max-w-[800px] flex-col gap-6 px-4 py-16 md:py-30"
+      >
         <div class="border-primary w-40 border-b-4"></div>
-        <h1 class="text-6xl leading-tight font-bold">
+        <h1 class="text-4xl leading-tight font-bold md:text-6xl">
           Un Acoperis Sigur<br />
           Din 1991
         </h1>
-        <h2 class="text-md max-w-[500px] leading-relaxed text-neutral-500">
+        <h2 class="max-w-[500px] leading-relaxed text-neutral-500">
           Fondată în 1991, cu o experiență de peste 20 ani în domeniu, firma
           IMCOP produce și comercializează țigle din beton. Grija noastră este
           legată de siguranța pe care trebuie să ți-o dea acoperișul casei tale.
@@ -70,14 +72,16 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
   </section>
 
   <!-- Details Section -->
-  <section class="mx-auto my-16 max-w-[1200px] px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col items-start gap-18 lg:flex-row lg:items-center">
+  <section
+    class="y-12 mx-auto max-w-[1200px] px-4 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
+  >
+    <div class="flex flex-col items-center gap-18 md:flex-row">
       <!-- Images Grid -->
       <div class="flex flex-col items-center justify-center">
         <Image
           src={adobeStock192310307}
           alt=""
-          class="h-[461px] rounded-md object-cover object-right"
+          class="h-[284px] rounded-md object-cover object-right md:h-[461px]"
           width={413}
           height={461}
         />
@@ -85,15 +89,15 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
         <Image
           src={adobeStock72047399}
           alt=""
-          class="-mt-15 h-[284px] rounded-md object-cover object-right"
+          class="-mt-15 h-[184px] rounded-md object-cover object-right md:h-[284px]"
           width={341}
           height={284}
         />
       </div>
 
       <!-- Features -->
-      <div class="flex flex-col gap-8 sm:gap-12 lg:w-[490px]">
-        <div class="flex flex-col gap-6 sm:flex-row">
+      <div class="flex flex-col gap-8 sm:gap-12 md:w-[490px]">
+        <div class="flex flex-row gap-6">
           <FeatureItem icon={hammerIcon}>
             <p>Rezistent la acțiuni mecanice si alte forte</p>
           </FeatureItem>
@@ -102,7 +106,7 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
           </FeatureItem>
         </div>
 
-        <div class="flex flex-col gap-6 sm:flex-row">
+        <div class="flex flex-row gap-6">
           <FeatureItem icon={thunderstormIcon}>
             <p>Protejat impotriva ploilor, furtunilor si a incendiilor</p>
           </FeatureItem>

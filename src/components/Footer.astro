@@ -8,37 +8,45 @@ import phoneIcon from "../assets/images/icons/phone-call-icon.svg";
 
 <footer class="py-10">
   <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-    <div class="my-12 grid gap-8 md:grid-cols-3 lg:gap-12">
-      <div>
-        <Image src={footerLogo} alt="IMCOP Logo" width={83} height={61} />
-        <span class="text-2xl font-bold" style="font-family: 'Lora', serif;">
-          IMCOP
-        </span>
+    <div
+      class="my-10 grid grid-cols-1 gap-8 sm:grid-cols-[auto_1fr_1fr] md:grid-cols-3 md:gap-12"
+    >
+      <div class="text-center md:text-left">
+        <Image
+          src={footerLogo}
+          alt="IMCOP Logo"
+          width={83}
+          height={61}
+          class="mx-auto md:mx-0"
+        />
+        <span class="font-arial text-2xl font-bold">IMCOP</span>
       </div>
 
-      <div class="flex flex-col gap-4">
-        <div class="flex items-center gap-3">
+      <div
+        class="flex flex-col gap-4 border-b border-neutral-200 py-4 sm:border-none sm:py-0"
+      >
+        <div class="flex justify-center gap-3 sm:justify-start">
           <Image src={phoneIcon} alt="Phone" />
           <a href="tel:+40264414041" aria-label="Telefon IMCOP">
             +40-264-414041
           </a>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center justify-center gap-3 sm:justify-start">
           <Image src={emailIcon} alt="Email" />
           <a href="mailto:imcop@imcop.ro" aria-label="Email IMCOP">
             imcop@imcop.ro
           </a>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center justify-center gap-3 sm:justify-start">
           <Image src={locationIcon} alt="Location" />
-          <address>
-            <div>400420, B-dul Nicolae Titulescu 16/12</div>
-            <div>Cluj-Napoca, Cluj</div>
+          <address class="text-center sm:text-left">
+            <span>400420, B-dul Nicolae Titulescu 16/12</span><br />
+            <span>Cluj-Napoca, Cluj</span>
           </address>
         </div>
       </div>
 
-      <nav class="flex flex-col gap-4">
+      <nav class="flex flex-col gap-4 text-center sm:text-left">
         <a href="/" class="hover:opacity-70">Companie</a>
         <a href="/produse" class="hover:opacity-70">Produse</a>
         <a href="/informatii-tehnice" class="hover:opacity-70"
@@ -48,7 +56,7 @@ import phoneIcon from "../assets/images/icons/phone-call-icon.svg";
       </nav>
     </div>
 
-    <div class="border-t border-neutral-300 pt-8 text-center">
+    <div class="border-t border-neutral-200 pt-4 text-center">
       <p class="text-sm text-neutral-400">
         2025 © IMCOP S.R.L. | Toate drepturile rezervate. | www.imcop.ro
       </p>

@@ -28,10 +28,12 @@ const {
 ---
 
 <div
-  class={`flex flex-col bg-neutral-100 ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+  class={`flex flex-col bg-neutral-100
+    ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}
+  `}
 >
   <div
-    class="relative flex-1 bg-cover bg-center"
+    class="relative min-h-[380px] flex-1 bg-cover bg-center"
     style={`background-image: url(${backgroundImage.src});`}
   >
     <Image
@@ -39,14 +41,16 @@ const {
       alt={title}
       width={productImageWidth}
       height={productImageHeight}
-      class={`absolute inset-0 top-1/2 -translate-y-1/2 -translate-x-1/2 drop-shadow-xl drop-shadow-black/50 ${
-        reverse ? "left-0" : "left-full"
+      class={`absolute inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 drop-shadow-xl drop-shadow-black/50 ${
+        reverse ? "lg:left-0" : "lg:left-full"
       }`}
     />
   </div>
-  <div class="relative flex-1 py-64">
+  <div
+    class="relative flex-1 px-4 py-20 text-center lg:px-0 lg:py-64 lg:text-left"
+  >
     <div
-      class="m-auto flex max-w-[400px] shrink-0 flex-col justify-center gap-6"
+      class="m-auto flex max-w-[400px] shrink-0 flex-col items-center justify-center gap-6 lg:items-start"
     >
       <h2 class="text-4xl font-bold">{title}</h2>
       <p>{description}</p>

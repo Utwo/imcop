@@ -58,9 +58,8 @@ pnpm preview
 
 TODO:
 
-- fix homepage
 - fix product page
 - add accesorii to the product page
 - add preFooter
-  clean contact page
+- clean contact page
 - make it responsive

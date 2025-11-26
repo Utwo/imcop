@@ -4,21 +4,13 @@ import PreFooter from "../components/PreFooter.astro";
 import { Image } from "astro:assets";
 import garantie from "../assets/images/garantie.png";
 import Heading from "../components/Heading.astro";
+import PageTitle from "../components/PageTitle.astro";
 ---
 
 <Layout>
   <div class="mx-auto w-full max-w-[1200px] p-4">
-    <main class="pb-10 text-lg sm:pb-16">
-      <div
-        class="rectangle1-gradient text-primary relative my-10 py-12 text-center text-3xl font-bold sm:my-18 md:text-5xl"
-      >
-        <div
-          class="rectangle2-gradient absolute top-1/2 left-1/12 h-[120px] w-[250px] -translate-y-1/2 sm:h-[190px] sm:w-[300px]"
-        >
-        </div>
-
-        <h1 class="relative z-10">Informatii tehnice</h1>
-      </div>
+    <main class="pb-10 sm:pb-16">
+      <PageTitle title="Informatii tehnice" />
 
       <div class="mb-10 flex flex-col gap-8 sm:mb-12 md:flex-row">
         <div>

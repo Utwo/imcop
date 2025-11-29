@@ -79,11 +79,11 @@ const seoDescription = description.join(" ") + " Descoperă specificațiile tehn
     </div>
 
     <!-- Overlay Content -->
-    <div class="relative z-10 mx-auto mt-80 max-w-[1200px]">
-      <div class="mx-4 flex justify-end gap-2">
+    <div class="relative z-10 mx-auto sm:mt-80 max-w-[1200px]">
+      <div class="sm:mx-4 flex sm:justify-end justify-center gap-2 text-sm sm:text-lg font-bold text-white">
         <a
           href={clasicUrl}
-          class={`cursor-pointer rounded-t-md px-20 py-3 text-lg font-bold text-white transition-all ${
+          class={`cursor-pointer rounded-t-md px-4 sm:px-20 py-3 transition-all ${
             isClasic ? "bg-primary" : "bg-gray-500 hover:bg-gray-600"
           }`}
           aria-pressed={isClasic}
@@ -92,7 +92,7 @@ const seoDescription = description.join(" ") + " Descoperă specificațiile tehn
         </a>
         <a
           href={avantajUrl}
-          class={`cursor-pointer rounded-t-md px-20 py-3 text-lg font-bold text-white transition-all ${
+          class={`cursor-pointer rounded-t-md px-4 sm:px-20 py-3 transition-all ${
             isAvantaj ? "bg-primary" : "bg-gray-500 hover:bg-gray-600"
           }`}
           aria-pressed={isAvantaj}
@@ -101,7 +101,7 @@ const seoDescription = description.join(" ") + " Descoperă specificațiile tehn
         </a>
         <a
           href={accesoriiUrl}
-          class={`cursor-pointer rounded-t-md px-20 py-3 text-lg font-bold text-white transition-all ${
+          class={`cursor-pointer rounded-t-md px-4 sm:px-20 py-3 transition-all ${
             isAccesorii ? "bg-primary" : "bg-gray-500 hover:bg-gray-600"
           }`}
           aria-pressed={isAccesorii}
@@ -111,7 +111,7 @@ const seoDescription = description.join(" ") + " Descoperă specificațiile tehn
       </div>
 
       <div
-        class="flex flex-col justify-between gap-8 rounded-md bg-white px-8 pt-10 lg:flex-row lg:gap-12"
+        class="flex flex-col justify-between rounded-md bg-white pt-8 pb-20 sm:flex-row px-4 sm:px-6 lg:px-8"
       >
         <!-- Left side - Product Info -->
         <div>
@@ -123,18 +123,16 @@ const seoDescription = description.join(" ") + " Descoperă specificațiile tehn
           <!-- Product Description -->
           <div class="max-w-[642px] space-y-4">
             {description.map((paragraph) => <p>{paragraph}</p>)}
-            <div class="mb-12 lg:mb-16">
               <Image
                 src={accessoriesImage}
                 alt="Tile accessories"
                 class="object-contain"
               />
-            </div>
           </div>
         </div>
 
         <!-- Right side - Catalog -->
-        <div>
+        <div >
           <h2 class="mb-4 text-xl">Catalog</h2>
           <ul class="list-disc space-y-3 pl-5">
             {

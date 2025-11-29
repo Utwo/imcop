@@ -25,13 +25,13 @@ interface Specification {
 }
 
 interface Props {
-  productType: "clasic" | "avantaj";
+  productType: "clasic" | "avantaj" | "accesorii";
   title: string;
   description: string[];
   accessoriesImage: ImageMetadata;
   catalogLinks: CatalogLink[];
-  colorsIntro: string;
-  colorSwatches: ColorSwatch[];
+  colorsIntro?: string;
+  colorSwatches?: ColorSwatch[];
   surface: string;
   material: string;
   specifications: Specification[];
@@ -58,8 +58,11 @@ const {
 } = Astro.props;
 
 const isClasic = productType === "clasic";
+const isAccesorii = productType === "accesorii";
+const isAvantaj = productType === "avantaj";
 const clasicUrl = "/produse/clasic";
 const avantajUrl = "/produse/avantaj";
+const accesoriiUrl = "/produse/accesorii";
 ---
 
 <Layout>
@@ -87,11 +90,20 @@ const avantajUrl = "/produse/avantaj";
         <a
           href={avantajUrl}
           class={`cursor-pointer rounded-t-md px-20 py-3 text-lg font-bold text-white transition-all ${
-            !isClasic ? "bg-primary" : "bg-gray-500 hover:bg-gray-600"
+            isAvantaj ? "bg-primary" : "bg-gray-500 hover:bg-gray-600"
           }`}
-          aria-pressed={!isClasic}
+          aria-pressed={isAvantaj}
         >
           AVANTAJ
+        </a>
+        <a
+          href={accesoriiUrl}
+          class={`cursor-pointer rounded-t-md px-20 py-3 text-lg font-bold text-white transition-all ${
+            isAccesorii ? "bg-primary" : "bg-gray-500 hover:bg-gray-600"
+          }`}
+          aria-pressed={isAccesorii}
+        >
+          ACCESORII
         </a>
       </div>
 
@@ -139,27 +151,31 @@ const avantajUrl = "/produse/avantaj";
 
   <!-- Products Section -->
   <section>
-    <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-      <!-- Available Colors Section -->
-      <h2 class="mb-4 text-2xl font-medium text-gray-500">
-        Culori disponibile
-      </h2>
-      <p>{colorsIntro}</p>
-    </div>
+    {colorsIntro && colorSwatches && (
+      <>
+        <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+          <!-- Available Colors Section -->
+          <h2 class="mb-4 text-2xl font-medium text-gray-500">
+            Culori disponibile
+          </h2>
+          <p>{colorsIntro}</p>
+        </div>
 
-    <!-- Color Swatches with Background Frames -->
-    <div class="mx-auto mt-6 grid grid-cols-2 sm:grid-cols-3">
-      {
-        colorSwatches.map((swatch) => (
-          <TileColorSwatch
-            image={swatch.image}
-            alt={swatch.alt}
-            label={swatch.label}
-            backgroundColor={swatch.backgroundColor}
-          />
-        ))
-      }
-    </div>
+        <!-- Color Swatches with Background Frames -->
+        <div class="mx-auto mt-6 grid grid-cols-2 sm:grid-cols-3">
+          {
+            colorSwatches.map((swatch) => (
+              <TileColorSwatch
+                image={swatch.image}
+                alt={swatch.alt}
+                label={swatch.label}
+                backgroundColor={swatch.backgroundColor}
+              />
+            ))
+          }
+        </div>
+      </>
+    )}
 
     <div class="mx-auto mt-12 max-w-[1200px] px-4 sm:px-6 lg:px-8">
       <!-- Characteristics Section -->

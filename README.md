@@ -58,8 +58,7 @@ pnpm preview
 
 TODO:
 
-- fix product page
-- add accesorii to the product page
 - add preFooter
 - clean contact page
 - make it responsive
+- slideshow on product page

@@ -1,0 +1,79 @@
+---
+import ProductPage from "../../components/ProductPage.astro";
+import heroBackground from "../../assets/images/hero-background-7757b6.png";
+import accessoriesTiles from "../../assets/images/accesorii/accesorii.jpg";
+import coama from "../../assets/images/accesorii/coama.jpg";
+import coamaCapat from "../../assets/images/accesorii/coama-de-capat.jpg";
+import coamaRamificatieTreiIesiri from "../../assets/images/accesorii/ramificatie-cu-3-iesiri.jpg";
+import coamaRamificatiePatruIesiri from "../../assets/images/accesorii/ramificatie-cu-4-iesiri.jpg";
+---
+
+<ProductPage
+  productType="accesorii"
+  title="Accesorii"
+  description={[
+    "Accesoriile sunt elementele care întregesc montajul învelitorii creând o imagine unitară în concordanță cu viziunea arhitecturală a proiectantului.",
+  ]}
+  accessoriesImage={accessoriesTiles}
+  catalogLinks={[
+    {
+      label: "Declarație de performanță",
+      href: "/public/download/Declaratiedeperformantaaccesorii2021.pdf",
+    },
+    {
+      label: "Certificat de garanție",
+      href: "/public/download/catalogCertificatdegarantieonline.pdf",
+    },
+    {
+      label: "Pliant produse",
+      href: "/public/download/catalogPliantseptembrie2017.pdf",
+    },
+  ]}
+  surface="netedă"
+  material="nisip, ciment, apă, pigmenți anorganici"
+  specifications={[
+    {
+      title: "Coamă",
+      image: coama,
+      imageAlt: "Coamă accesoriu",
+      details: [
+        "<strong>Lungime:</strong> 400 mm.",
+        "<strong>Necesar:</strong> 3 buc./ml.",
+        "<strong>Greutate:</strong> 3,8 kg./bucată.",
+      ],
+    },
+    {
+      title: "Coamă de capăt",
+      image: coamaCapat,
+      imageAlt: "Coamă de capăt accesoriu",
+      details: [
+        "<strong>Lungime:</strong> 400 mm.",
+        "<strong>Necesar:</strong> 1 buc./lungime coamă.",
+        "<strong>Greutate:</strong> 3,2 kg./bucată.",
+      ],
+    },
+    {
+      title: "Coamă ramificație cu trei ieșiri",
+      image: coamaRamificatieTreiIesiri,
+      imageAlt: "Coamă ramificație cu trei ieșiri",
+      details: [
+        "<strong>Necesar:</strong> 1 buc./ramificație coame.",
+        "<strong>Greutate:</strong> 5,5 kg./bucată.",
+      ],
+    },
+    {
+      title: "Coamă ramificație cu patru ieșiri",
+      image: coamaRamificatiePatruIesiri,
+      imageAlt: "Coamă ramificație cu patru ieșiri",
+      details: [
+        "<strong>Necesar:</strong> 1 buc./ramificație coame.",
+        "<strong>Greutate:</strong> 7,0 kg./bucată.",
+      ],
+    },
+  ]}
+  ctaButton={{
+    href: "/produse/clasic",
+    text: "Vezi si tigla Clasic",
+  }}
+  heroBackground={heroBackground}
+/>

@@ -1,51 +1,65 @@
 ---
 import { Image } from "astro:assets";
-import rectangle45 from "../assets/images/rectangle45.png";
-import rectangle46 from "../assets/images/rectangle46.png";
+import phoneIcon from "../assets/images/icons/phone-call-icon.svg";
+import heroBackground from "../assets/images/hero-background-7757b6.png";
 import Button from "./Button.astro";
 ---
 
-<section class="relative my-16 overflow-hidden bg-neutral-50 sm:py-16">
-  <div class="relative z-10 mx-auto max-w-[900px] px-4 sm:px-6 lg:px-8">
-    <div
-      class="flex flex-col items-center justify-center gap-6 text-center sm:gap-8"
-    >
-      <div class="text-[16px] font-bold text-[#767676] sm:text-[18px]">
-        <p class="leading-[30px]">Ai intrebari suplimentare?</p>
-      </div>
-      <div
-        class="text-primary text-[24px] font-bold sm:text-[28px]"
-        style="font-family: 'DM Sans', sans-serif;"
-      >
-        <p class="leading-[30px]">+40-264-414041</p>
-      </div>
-      <Button href="/contact"> Contacteaza un reprezentat local </Button>
-    </div>
+<section class="relative my-16 overflow-hidden py-20">
+  <div
+    class="absolute inset-0 bg-cover bg-center opacity-80"
+    style={`background-image: linear-gradient(to bottom right, rgb(237 27 36 / 0.05), white, rgb(245 245 245)), url(${heroBackground.src});`}
+  >
   </div>
 
-  <div class="pointer-events-none absolute inset-0 overflow-hidden">
-    <div
-      class="absolute bottom-0 left-0 h-[200px] w-[200px] opacity-30 sm:h-[282px] sm:w-[401.413px] sm:opacity-100"
-    >
-      <Image
-        src={rectangle45}
-        alt=""
-        class="block size-full max-w-none object-cover"
-        width={401.413}
-        height={282}
-      />
-    </div>
-    <div
-      class="absolute right-0 bottom-0 h-[200px] w-[200px] opacity-30 sm:h-[282px] sm:w-[401.413px] sm:opacity-100"
-    >
-      <div class="h-full w-full rotate-180">
-        <Image
-          src={rectangle46}
-          alt=""
-          class="block size-full max-w-none object-cover"
-          width={401.413}
-          height={282}
-        />
+  <div class="relative z-10 mx-auto max-w-[800px] px-4">
+    <div class="rounded-3xl bg-white p-8 shadow-2xl backdrop-blur-sm sm:p-12">
+      <div class="flex flex-col items-center justify-center gap-10 text-center">
+        <div class="space-y-3">
+          <h2 class="text-2xl font-bold">Ai întrebări suplimentare?</h2>
+          <p class="text-neutral-600">
+            Suntem aici să te ajutăm cu orice informație ai nevoie
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center gap-5 sm:flex-row sm:gap-6">
+          <div
+            class="bg-primary/10 flex items-center justify-center rounded-full p-5"
+          >
+            <Image src={phoneIcon} alt="" width={28} height={28} />
+          </div>
+          <a
+            href="tel:+40264414041"
+            class="group flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+          >
+            <span class="text-sm font-medium text-neutral-500">
+              Sună-ne acum
+            </span>
+            <span
+              class="text-primary font-dm-sans text-2xl leading-tight font-bold sm:text-4xl"
+            >
+              +40-264-414041
+            </span>
+          </a>
+        </div>
+
+        <div class="flex w-full max-w-md items-center gap-4">
+          <div
+            class="h-px flex-1 bg-linear-to-r from-transparent via-neutral-300 to-transparent"
+          >
+          </div>
+          <span
+            class="text-[12px] font-medium tracking-wider text-neutral-400 uppercase"
+          >
+            sau
+          </span>
+          <div
+            class="h-px flex-1 bg-linear-to-r from-transparent via-neutral-300 to-transparent"
+          >
+          </div>
+        </div>
+
+        <Button href="/contact"> Contactează un reprezentant local </Button>
       </div>
     </div>
   </div>

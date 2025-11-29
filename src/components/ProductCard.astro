@@ -12,6 +12,7 @@ interface Props {
   linkUrl: string;
   linkText?: string;
   reverse?: boolean;
+  priority?: boolean;
 }
 
 const {
@@ -24,6 +25,7 @@ const {
   linkUrl,
   linkText = "Vezi produs",
   reverse = false,
+  priority = false,
 } = Astro.props;
 ---
 
@@ -44,6 +46,7 @@ const {
       class={`absolute inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 drop-shadow-xl drop-shadow-black/50 ${
         reverse ? "lg:left-0" : "lg:left-full"
       }`}
+      priority={priority}
     />
   </div>
   <div

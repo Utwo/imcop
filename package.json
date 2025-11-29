@@ -9,14 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "@fontsource-variable/roboto": "^5.2.9",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.16.2",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "sharp": "^0.34.5",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.1"
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "sharp": "^0.34.5"
   }
 }

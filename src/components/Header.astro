@@ -1,14 +1,35 @@
 ---
-import { Image } from "astro:assets";
-import logo from "../assets/images/logo.svg";
-
 const currentPath = Astro.url.pathname;
 ---
 
 <header class="mx-auto max-w-[1200px] px-4 py-4">
   <div class="flex justify-between gap-2">
     <a href="/" class="flex items-center gap-2 sm:gap-[10px]">
-      <Image src={logo} alt="IMCOP Logo" width={42} height={32} />
+      <svg
+        preserveAspectRatio="none"
+        width="42"
+        height="32"
+        overflow="visible"
+        style="display: block;"
+        viewBox="0 0 38 29"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="Logo">
+          <rect
+            id="Rectangle 1"
+            x="23.7094"
+            y="13.9658"
+            width="14.2906"
+            height="14.2906"
+            fill="var(--fill-0, #949599)"></rect>
+          <path
+            id="Vector 1"
+            d="M22.0855 22.735H14.2906L22.0855 12.3419V0L0 27.9316H22.0855V22.735Z"
+            fill="var(--fill-0, #ED1B24)"></path>
+        </g>
+      </svg>
+
       <p class="font-arial text-[20px] leading-normal font-bold">IMCOP</p>
     </a>
     <nav class="hidden items-center gap-4 text-lg font-medium md:flex lg:gap-7">

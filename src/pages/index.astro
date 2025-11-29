@@ -24,17 +24,15 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
   <section class="relative overflow-hidden">
     <!-- Right side - Background and Image -->
     <div
-      class="absolute top-0 right-0 -z-10 h-full w-4xl bg-linear-to-br from-[#ABCEFF] to-[#E0EBFD]"
+      class="absolute top-0 right-0 -z-10 hidden h-full w-4xl bg-linear-to-br from-[#ABCEFF] to-[#E0EBFD] md:block"
       style={`background: url(${adobeStock229227468.src}) no-repeat bottom 0 left -300px, linear-gradient(var(--tw-gradient-stops)); transform: scaleX(-1); background-size: 100%;`}
     >
     </div>
 
     <!-- Left side - Text content -->
-    <div
-      class="rectangle1-gradient relative px-4 sm:px-6 md:my-16 md:mr-26 lg:px-8"
-    >
+    <div class="relative md:my-26">
       <div
-        class="mx-auto flex max-w-[800px] flex-col gap-6 px-4 py-16 md:py-30"
+        class="mx-auto flex max-w-[600px] flex-col gap-6 bg-white px-4 py-16 md:py-26 lg:-translate-x-1/3"
       >
         <div class="border-primary w-40 border-b-4"></div>
         <h1
@@ -43,7 +41,7 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
           Un Acoperis Sigur<br />
           Din 1991
         </h1>
-        <h2 class="max-w-[500px] leading-relaxed text-neutral-500">
+        <h2 class="max-w-[500px] leading-relaxed text-neutral-900">
           Fondată în 1991, cu o experiență de peste 30 de ani în domeniu, firma
           IMCOP produce și comercializează țigle din beton. Grija noastră este
           legată de siguranța pe care trebuie să ți-o dea acoperișul casei tale.

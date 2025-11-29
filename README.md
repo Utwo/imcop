@@ -58,7 +58,4 @@ pnpm preview
 
 TODO:
 
-- add preFooter
-- clean contact page
-- make it responsive
 - slideshow on product page

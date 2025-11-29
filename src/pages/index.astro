@@ -17,7 +17,10 @@ import vectorIcon from "../assets/images/icons/vector-icon.svg";
 import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
 ---
 
-<Layout>
+<Layout
+  title="Acasă"
+  description="IMCOP produce și comercializează țigle din beton de înaltă calitate din 1991. Oferim garanție 30 de ani pentru acoperișuri sigure și durabile. Descoperă gama noastră de produse: Tigla Avantaj și Tigla Clasic."
+>
   <section class="relative overflow-hidden">
     <!-- Right side - Background and Image -->
     <div
@@ -34,12 +37,14 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
         class="mx-auto flex max-w-[800px] flex-col gap-6 px-4 py-16 md:py-30"
       >
         <div class="border-primary w-40 border-b-4"></div>
-        <h1 class="text-4xl leading-tight font-bold md:text-6xl">
+        <h1
+          class="text-4xl leading-tight font-bold text-neutral-800 md:text-6xl"
+        >
           Un Acoperis Sigur<br />
           Din 1991
         </h1>
         <h2 class="max-w-[500px] leading-relaxed text-neutral-500">
-          Fondată în 1991, cu o experiență de peste 20 ani în domeniu, firma
+          Fondată în 1991, cu o experiență de peste 30 de ani în domeniu, firma
           IMCOP produce și comercializează țigle din beton. Grija noastră este
           legată de siguranța pe care trebuie să ți-o dea acoperișul casei tale.
         </h2>
@@ -80,7 +85,7 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
       <div class="flex flex-col items-center justify-center">
         <Image
           src={adobeStock192310307}
-          alt=""
+          alt="Acoperiș cu țigle din beton IMCOP"
           class="h-[284px] rounded-md object-cover object-right md:h-[461px]"
           width={413}
           height={461}
@@ -88,7 +93,7 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
 
         <Image
           src={adobeStock72047399}
-          alt=""
+          alt="Detalii acoperiș cu țigle din beton"
           class="-mt-15 h-[184px] rounded-md object-cover object-right md:h-[284px]"
           width={341}
           height={284}
@@ -98,19 +103,22 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
       <!-- Features -->
       <div class="flex flex-col gap-8 sm:gap-12 md:w-[490px]">
         <div class="flex flex-row gap-6">
-          <FeatureItem icon={hammerIcon}>
+          <FeatureItem icon={hammerIcon} iconAlt="Icon rezistență mecanică">
             <p>Rezistent la acțiuni mecanice si alte forte</p>
           </FeatureItem>
-          <FeatureItem icon={ecoIcon}>
+          <FeatureItem icon={ecoIcon} iconAlt="Icon ecologic">
             <p>Ecologic si prietenos cu mediul</p>
           </FeatureItem>
         </div>
 
         <div class="flex flex-row gap-6">
-          <FeatureItem icon={thunderstormIcon}>
+          <FeatureItem
+            icon={thunderstormIcon}
+            iconAlt="Icon protecție intemperii"
+          >
             <p>Protejat impotriva ploilor, furtunilor si a incendiilor</p>
           </FeatureItem>
-          <FeatureItem icon={vectorIcon}>
+          <FeatureItem icon={vectorIcon} iconAlt="Icon rezistență temperatură">
             <p>
               Din punct de vedere al rezistenței la variații de temperatură
               extreme
@@ -118,7 +126,11 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
           </FeatureItem>
         </div>
 
-        <FeatureItem icon={badgeCheckIcon} fullWidth={true}>
+        <FeatureItem
+          icon={badgeCheckIcon}
+          iconAlt="Icon garanție"
+          fullWidth={true}
+        >
           <p>
             IMCOP îți oferă UN ACOPERIȘ SIGUR!<br />
             Garantat 30 de ani

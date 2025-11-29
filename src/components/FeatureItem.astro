@@ -7,6 +7,7 @@ interface Props {
   iconWidth?: number;
   iconHeight?: number;
   fullWidth?: boolean;
+  iconAlt?: string;
 }
 
 const {
@@ -14,6 +15,7 @@ const {
   iconWidth = 40,
   iconHeight = 40,
   fullWidth = false,
+  iconAlt = "",
 } = Astro.props;
 
 const containerClass = fullWidth
@@ -24,10 +26,11 @@ const containerClass = fullWidth
 <div class={containerClass}>
   <Image
     src={icon}
-    alt=""
+    alt={iconAlt}
     width={iconWidth}
     height={iconHeight}
     class="block size-10"
+    aria-hidden={!iconAlt}
   />
 
   <div>

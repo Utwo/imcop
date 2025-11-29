@@ -63,9 +63,12 @@ const isAvantaj = productType === "avantaj";
 const clasicUrl = "/produse/clasic";
 const avantajUrl = "/produse/avantaj";
 const accesoriiUrl = "/produse/accesorii";
+
+// Generate SEO-friendly description from product description
+const seoDescription = description.join(" ") + " Descoperă specificațiile tehnice, culorile disponibile și catalogul de produse IMCOP.";
 ---
 
-<Layout>
+<Layout title={title} description={seoDescription}>
   <section class="relative pt-26">
     <div
       class="absolute inset-0 z-0 h-full w-full"

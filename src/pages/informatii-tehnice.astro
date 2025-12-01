@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import PreFooter from "../components/PreFooter.astro";
 import { Image } from "astro:assets";
 import garantie from "../assets/images/garantie.webp";
 import Heading from "../components/Heading.astro";
@@ -11,10 +10,9 @@ import PageTitle from "../components/PageTitle.astro";
   title="Informații Tehnice"
   description="Informații tehnice despre țiglele din beton IMCOP: indicații de montaj, prescripții de fixare, reglementări și garanție 30 de ani. Produse conform SR EN 490 și SR EN 491."
 >
+  <PageTitle title="Informații Tehnice" />
   <div class="mx-auto w-full max-w-[1200px] px-4">
-    <main class="pb-10 sm:pb-16">
-      <PageTitle title="Informatii tehnice" />
-
+    <main class="mt-10 pb-10 sm:pb-16">
       <div class="mb-10 flex flex-col gap-8 sm:mb-12 md:flex-row">
         <div>
           <Heading text="Indicaţii de montaj" />
@@ -43,12 +41,6 @@ import PageTitle from "../components/PageTitle.astro";
             <b>necesarul de şipci</b>
             : 2,9-3,1 ml/mp în funcţie de suprapunere.
           </p>
-
-          <Heading text="Mod de realizare" />
-          <p>Compactare şi extrudare de mare presiune.</p>
-
-          <Heading text="Reglementări" />
-          <p>Produs în conformitate cu SR EN 490 şi SR EN 491.</p>
         </div>
 
         <div>
@@ -74,9 +66,15 @@ import PageTitle from "../components/PageTitle.astro";
           </p>
           <p>Este necesar montarea sub ţiglă a unui strat de hidroizolaţie.</p>
         </div>
+        <dir>
+          <Heading text="Reglementări" />
+          <p>Produs în conformitate cu SR EN 490 şi SR EN 491.</p>
+          <Heading text="Mod de realizare" />
+          <p>Compactare şi extrudare de mare presiune.</p>
+        </dir>
       </div>
 
-      <hr class="my-10 w-full border border-red-400 sm:my-12" />
+      <hr class="my-10 w-full border border-red-100 sm:my-12" />
 
       <div class="flex flex-col items-start gap-8 lg:flex-row">
         <div>

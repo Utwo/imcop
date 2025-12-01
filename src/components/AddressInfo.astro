@@ -43,7 +43,7 @@ const {
           class="text-primary opacity-60"
         />
       </div>
-      <address class="leading-relaxed text-gray-700 not-italic">
+      <address class="leading-relaxed not-italic">
         <div class="font-medium">{streetAddress}</div>
         <div class="text-gray-600">{city}</div>
       </address>
@@ -61,7 +61,7 @@ const {
         />
       </div>
       <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
-        <span class="font-semibold text-gray-700">{phoneLabel}</span>
+        <span class="font-semibold">{phoneLabel}</span>
         <a
           href={`tel:${phoneNumber.replace(/[-\s]/g, "")}`}
           class="text-primary hover:text-primary/80 font-medium transition-colors hover:underline"

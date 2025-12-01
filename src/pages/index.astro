@@ -15,43 +15,55 @@ import ecoIcon from "../assets/images/icons/eco-icon.svg";
 import thunderstormIcon from "../assets/images/icons/thunderstorm-icon.svg";
 import vectorIcon from "../assets/images/icons/vector-icon.svg";
 import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
+import Button from "../components/Button.astro";
+import SectionHeader from "../components/SectionHeader.astro";
 ---
 
 <Layout
   title="Acasă"
   description="IMCOP produce și comercializează țigle din beton de înaltă calitate din 1991. Oferim garanție 30 de ani pentru acoperișuri sigure și durabile. Descoperă gama noastră de produse: Tigla Avantaj și Tigla Clasic."
 >
-  <section class="relative overflow-hidden">
+  <section class="relative mb-10 overflow-hidden">
     <!-- Right side - Background and Image -->
     <div
       class="absolute top-0 right-0 -z-10 hidden h-full w-4xl bg-linear-to-br from-[#ABCEFF] to-[#E0EBFD] md:block"
       style={`background: url(${adobeStock229227468.src}) no-repeat bottom 0 left -300px, linear-gradient(var(--tw-gradient-stops)); transform: scaleX(-1); background-size: 100%;`}
     >
     </div>
-
     <!-- Left side - Text content -->
     <div class="relative md:my-26">
       <div
-        class="mx-auto flex max-w-[600px] flex-col gap-6 bg-white px-4 py-16 md:py-26 lg:-translate-x-1/4"
+        class="mx-auto flex max-w-[600px] flex-col gap-6 bg-white px-4 py-16 md:py-22 lg:-translate-x-1/4"
       >
         <div class="border-primary w-40 border-b-4"></div>
         <h1
           class="text-4xl leading-tight font-bold text-neutral-800 md:text-6xl"
         >
           Un Acoperis Sigur<br />
-          Din 1991
+          <span class="text-xl leading-relaxed text-gray-500 sm:text-3xl"
+            >Pentru casa și familia ta</span
+          >
         </h1>
-        <h2 class="max-w-[500px] text-lg leading-relaxed text-neutral-900">
+        <h2 class="max-w-[500px] leading-relaxed text-neutral-900 sm:text-lg">
           Fondată în 1991, cu o experiență de peste 30 de ani în domeniu, firma
           IMCOP produce și comercializează țigle din beton. Grija noastră este
           legată de siguranța pe care trebuie să ți-o dea acoperișul casei tale.
         </h2>
+        <div class="flex justify-center gap-4 sm:justify-start">
+          <Button href="/produse/avantaj">Vezi produse</Button>
+          <Button href="/contact" secondary>Contact</Button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Products Section -->
-  <section class="py-12 sm:py-16 lg:py-20">
+  <section class="py-16 lg:py-20">
+    <SectionHeader
+      badge="Produse IMCOP"
+      title="Gama noastră de țigle"
+      description="Calitate superioară pentru orice tip de proiect"
+    />
     <ProductCard
       backgroundImage={avantajPhoto}
       productImage={avantajTigla}
@@ -76,9 +88,12 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
   </section>
 
   <!-- Details Section -->
-  <section
-    class="y-12 mx-auto max-w-[1200px] px-4 sm:px-6 sm:py-16 lg:px-8 lg:py-20"
-  >
+  <section class="mx-auto max-w-[1200px] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <SectionHeader
+      badge="De ce să alegi IMCOP"
+      title="Avantaje competitive"
+      description="Calitate garantată pentru acoperișul tău"
+    />
     <div class="flex flex-col items-center gap-18 md:flex-row">
       <!-- Images Grid -->
       <div class="flex flex-col items-center justify-center">
@@ -124,20 +139,21 @@ import badgeCheckIcon from "../assets/images/icons/badge-check-icon.svg";
             </p>
           </FeatureItem>
         </div>
-
-        <FeatureItem
-          icon={badgeCheckIcon}
-          iconAlt="Icon garanție"
-          fullWidth={true}
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-xl"
         >
-          <p>
-            IMCOP îți oferă UN ACOPERIȘ SIGUR!<br />
-            Garantat 30 de ani
-          </p>
-        </FeatureItem>
+          <FeatureItem
+            icon={badgeCheckIcon}
+            iconAlt="Icon garanție"
+            fullWidth={true}
+          >
+            <p>
+              IMCOP îți oferă UN ACOPERIȘ SIGUR!<br />
+              Garanție <b>30 de ani!</b>
+            </p>
+          </FeatureItem>
+        </div>
       </div>
     </div>
   </section>
 </Layout>
-
-<!-- <PreFooter /> -->

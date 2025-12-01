@@ -1,0 +1,21 @@
+---
+interface Props {
+  badge?: string;
+  title: string;
+  description?: string;
+}
+
+const { badge, title, description } = Astro.props;
+---
+
+<div class="mb-15 px-4 text-center">
+  {
+    badge && (
+      <div class="bg-primary/10 mb-4 inline-flex items-center gap-2 rounded-full px-4 py-2">
+        <span class="text-primary text-sm">{badge}</span>
+      </div>
+    )
+  }
+  <h2 class="mb-4 text-2xl sm:text-4xl md:text-5xl">{title}</h2>
+  {description && <p class="text-xl text-gray-500">{description}</p>}
+</div>

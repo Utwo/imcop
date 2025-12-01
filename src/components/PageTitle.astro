@@ -6,13 +6,11 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<div
-  class="rectangle1-gradient relative py-12 text-center text-3xl font-bold text-neutral-600 sm:my-18 md:text-5xl"
->
-  <div
-    class="rectangle2-gradient absolute top-1/2 left-1/12 h-[120px] w-[250px] -translate-y-1/2 sm:h-[190px] sm:w-[300px]"
+<div class="relative overflow-hidden bg-linear-to-br from-gray-50 to-white">
+  <div class="mx-auto max-w-[1200px] px-4 py-20">
+    <h1 class="text-5xl tracking-tight text-gray-600">{title}</h1>
+  </div><div
+    class="absolute right-0 bottom-0 left-0 h-1 bg-linear-to-r from-red-400/20 via-red-500/40 to-red-400/20"
   >
   </div>
-
-  <h1 class="relative z-10">{title}</h1>
 </div>

@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import PreFooter from "../components/PreFooter.astro";
 import PageTitle from "../components/PageTitle.astro";
 import AddressInfo from "../components/AddressInfo.astro";
 import RepresentativesSearchable from "../components/RepresentativesSearchable.astro";
@@ -65,9 +64,9 @@ const representatives: Representative[] = [
   title="Contact"
   description="Contactează IMCOP pentru informații despre țigle din beton. Sediul social: Cluj-Napoca. Fabrica: Teius, Alba. Reprezentanți zonali disponibili în toată România."
 >
+  <PageTitle title="Contact" />
   <div class="mx-auto w-full max-w-[1200px] px-4">
     <main class="pb-10 sm:pb-16">
-      <PageTitle title="Contact" />
       <section class="mt-12 sm:mt-16">
         <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:gap-10">
           <AddressInfo

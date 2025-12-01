@@ -1,14 +1,26 @@
 ---
 interface Props {
   href?: string;
+  secondary?: boolean;
 }
 
-const { href } = Astro.props;
+const { href, secondary } = Astro.props;
 ---
 
-<a
-  href={href}
-  class="bg-primary w-fit cursor-pointer rounded-md px-16 py-3 font-bold text-white transition-opacity hover:opacity-60"
->
-  <slot />
-</a>
+{
+  Astro.props.secondary ? (
+    <a
+      href={href}
+      class="text-primary border-primary hover:bg-primary/10 w-fit cursor-pointer rounded-md border bg-white px-8 py-4 font-bold shadow transition-all hover:scale-105 hover:shadow-lg"
+    >
+      <slot />
+    </a>
+  ) : (
+    <a
+      href={href}
+      class="bg-primary w-fit cursor-pointer rounded-md px-8 py-4 font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-[#d41820] hover:shadow-xl"
+    >
+      <slot />
+    </a>
+  )
+}

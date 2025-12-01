@@ -90,7 +90,13 @@ import PageTitle from "../components/PageTitle.astro";
           <p>Originalul IMCOP este marcat pe spatele țiglei astfel:</p>
         </div>
         <div class="h-fit shrink-0">
-          <Image src={garantie} alt="Garantie" width={337} height={208} />
+          <Image
+            src={garantie}
+            alt="Garantie"
+            width={337}
+            height={208}
+            priority
+          />
         </div>
       </div>
     </main>
